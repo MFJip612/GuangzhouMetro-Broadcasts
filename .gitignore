@@ -125,3 +125,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+/.hbuilderx/
+/.vite/
+/unpackage/
+dist/**
+.project
+.DS_Store
+.hbuilderx/
