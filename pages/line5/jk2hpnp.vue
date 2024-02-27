@@ -40,124 +40,124 @@
 				stationRes: [{
 					title: '滘口',
 					subtitle: 'Jiaokou',
-					src: 'https://*/l5whpxg/Jiaokou.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Jiaokou.mp3'
 				}, {
 					title: '坦尾',
 					subtitle: 'Tanwei',
-					src: 'https://*/l5whpxg/Tanwei.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Tanwei.mp3'
 				}, {
 					title: '中山八',
 					subtitle: 'Zhongshanba',
-					src: 'https://*/l5whpxg/Zhongshanba.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Zhongshanba.mp3'
 				}, {
 					title: '西场',
 					subtitle: 'Xichang',
-					src: 'https://*/l5whpxg/Xichang.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Xichang.mp3'
 				}, {
 					title: '西村',
 					subtitle: 'Xicun',
-					src: 'https://*/l5whpxg/Xicun.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Xicun.mp3'
 				}, {
 					title: '广州火车站',
 					subtitle: 'Guangzhou Railway Station',
-					src: 'https://*/l5whpxg/GuangzhouRailwayStation.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/GuangzhouRailwayStation.mp3'
 				}, {
 					title: '小北',
 					subtitle: 'Xiaobei',
-					src: 'https://*/l5whpxg/Xiaobei.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Xiaobei.mp3'
 				}, {
 					title: '淘金',
 					subtitle: 'Taojin',
-					src: 'https://*/l5whpxg/Taojin.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Taojin.mp3'
 				}, {
 					title: '区庄',
 					subtitle: 'Ouzhuang',
-					src: 'https://*/l5whpxg/Ouzhuang.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Ouzhuang.mp3'
 				}, {
 					title: '动物园',
 					subtitle: 'Zoo',
-					src: 'https://*/l5whpxg/Zoo.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Zoo.mp3'
 				}, {
 					title: '杨箕',
 					subtitle: 'Yangji',
-					src: 'https://*/l5whpxg/Yangji.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Yangji.mp3'
 				}, {
 					title: '五羊邨',
 					subtitle: 'Wuyangcun',
-					src: 'https://*/l5whpxg/Wuyangcun.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Wuyangcun.mp3'
 				}, {
 					title: '珠江新城',
 					subtitle: 'Zhujiang New Town',
-					src: 'https://*/l5whpxg/ZhujiangNewTown.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/ZhujiangNewTown.mp3'
 				}, {
 					title: '猎德',
 					subtitle: 'Liede',
-					src: 'https://*/l5whpxg/Liede.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Liede.mp3'
 				}, {
 					title: '潭村',
 					subtitle: 'Tancun',
-					src: 'https://*/l5whpxg/Tancun.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Tancun.mp3'
 				}, {
 					title: '员村',
 					subtitle: 'Yuancun',
-					src: 'https://*/l5whpxg/Yuancun.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Yuancun.mp3'
 				}, {
 					title: '科韵路',
 					subtitle: 'Keyun Lu',
-					src: 'https://*/l5whpxg/KeyunLu.mp3',
+					src: 'https://download.zhengxian.top/l5whpxg/KeyunLu.mp3',
 
 				}, {
 					title: '车陂南',
 					subtitle: 'Chebeinan',
-					src: 'https://*/l5whpxg/Chebeinan.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Chebeinan.mp3'
 				}, {
 					title: '东圃',
 					subtitle: 'Dongpu',
-					src: 'https://*/l5whpxg/Dongpu.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Dongpu.mp3'
 				}, {
 					title: '三溪',
 					subtitle: 'Sanxi',
-					src: 'https://*/l5whpxg/Sanxi.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Sanxi.mp3'
 				}, {
 					title: '鱼珠',
 					subtitle: 'Yuzhu',
-					src: 'https://*/l5whpxg/Yuzhu.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Yuzhu.mp3'
 				}, {
 					title: '大沙地',
 					subtitle: 'Dashadi',
-					src: 'https://*/l5whpxg/Dashadi.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Dashadi.mp3'
 				}, {
 					title: '大沙东',
 					subtitle: 'Dashadong',
-					src: 'https://*/l5whpxg/Dashadong.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Dashadong.mp3'
 				}, {
 					title: '文冲',
 					subtitle: 'Wenchong',
-					src: 'https://*/l5whpxg/Wenchong.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Wenchong.mp3'
 				}, {
 					title: '双沙',
 					subtitle: 'Shuangsha',
-					src: 'https://*/l5whpxg/Shuangsha.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Shuangsha.mp3'
 				}, {
 					title: '庙头',
 					subtitle: 'Miaotou',
-					src: 'https://*/l5whpxg/Miaotou.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Miaotou.mp3'
 				}, {
 					title: '夏园',
 					subtitle: 'Xiayuan',
-					src: 'https://*/l5whpxg/Xiayuan.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Xiayuan.mp3'
 				}, {
 					title: '保盈大道',
 					subtitle: 'Baoying Dadao',
-					src: 'https://*/l5whpxg/BaoyingDadao.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/BaoyingDadao.mp3'
 				}, {
 					title: '夏港',
 					subtitle: 'Xiagang',
-					src: 'https://*/l5whpxg/Xiagang.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Xiagang.mp3'
 				}, {
 					title: '黄埔新港',
 					subtitle: 'Huangpu New Port',
-					src: 'https://*/l5whpxg/HuangpuNewPort.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/HuangpuNewPort.mp3'
 				}]
 			}
 		},

@@ -41,7 +41,7 @@
 				stationRes: [{
 					title: '广州东站',
 					subtitle: 'Guangzhou East Railway Station',
-					src: 'https://*/l1bzgbc/Guangzhoudongzhan.mp3'
+					src: 'https://download.zhengxian.top/l1bzgbc/Guangzhoudongzhan.mp3'
 				}, {
 					title: '体育中心',
 					subtitle: 'Tianhe Sports Center'
@@ -88,7 +88,7 @@
 				}, {
 					title: '西塱',
 					subtitle: 'Xilang',
-					src: 'https://*/l1bzgbc/Xilang.mp3'
+					src: 'https://download.zhengxian.top/l1bzgbc/Xilang.mp3'
 				}]
 			}
 		},

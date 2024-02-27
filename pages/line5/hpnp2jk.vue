@@ -40,7 +40,7 @@
 				stationRes: [{
 					title: '黄埔新港',
 					subtitle: 'Huangpu New Port',
-					src: 'https://*/l5whpxg/HuangpuNewPort.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/HuangpuNewPort.mp3'
 				}, {
 					title: '夏港',
 					subtitle: 'Xiagang'
@@ -129,7 +129,7 @@
 				}, {
 					title: '滘口',
 					subtitle: 'Jiaokou',
-					src: 'https://*/l5whpxg/Jiaokou.mp3'
+					src: 'https://download.zhengxian.top/l5whpxg/Jiaokou.mp3'
 				}]
 			}
 		},
