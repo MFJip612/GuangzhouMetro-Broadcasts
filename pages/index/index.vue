@@ -3,7 +3,7 @@
 		<image src="/static/images/Guangzhou_Metro_logo.svg" style="width: 100%;height: 80rpx;"></image>
 		<view class="choose">
 			<navigator url="/pages/line1/line1">
-				<view class="line line-1" @click="function(){console.log('Click')}">
+				<view class="line line-1">
 					<text class="num">1</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -18,6 +18,7 @@
 					<text class="en">Line 2</text>
 				</view>
 			</view>
+			<navigator url="/pages/line3/line3">
 			<view class="line line-3">
 				<text class="num">3</text>
 				<view class="col">
@@ -25,6 +26,7 @@
 					<text class="en">Line 3</text>
 				</view>
 			</view>
+			</navigator>
 			<view class="line line-4">
 				<text class="num">4</text>
 				<view class="col">

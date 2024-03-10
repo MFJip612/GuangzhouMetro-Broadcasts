@@ -57,6 +57,46 @@
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path" : "pages/line3/line3",
+			"style" : 
+			{
+				"navigationBarTitleText" : "3号线\nLine 3",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/line3/B4/B4",
+			"style" : 
+			{
+				"navigationBarTitleText" : "B4",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/line3/B4/apn2pys",
+			"style" : 
+			{
+				"navigationBarTitleText" : "机场北——番禺广场\nFrom Airport N. towards Panyu Square",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/line3/B4/apn2tyxl",
+			"style" : 
+			{
+				"navigationBarTitleText" : "机场北——体育西路\nFrom Airport N. towards Tiyu Xilu",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh" : false
+			}
 		}
 	],
 	"globalStyle": {

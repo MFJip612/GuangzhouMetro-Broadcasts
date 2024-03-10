@@ -3,8 +3,10 @@
 		<uni-group v-for="item in stationRes" :title="item.title+'    '+item.subtitle" top="20" mode="card">
 			<view>分组{{item.title}} 的内容</view>
 			<view>The content of the group {{item.subtitle}}</view>
-			<button @click="PlaySound(item.src)">报站</button>
-			<button class="stop-play" @click="stopPlay()">停止播放</button>
+			<view class="btn-d">
+				<button @click="PlaySound(item.src)">报站</button>
+				<button class="stop-play" @click="stopPlay()">停止播放</button>
+			</view>
 		</uni-group>
 	</view>
 </template>
@@ -161,5 +163,9 @@
 	/* 一般认为宽度小于768px的设备为手机 */
 	@media screen and (max-width: 767px) {
 		/* 手机样式 */
+	}
+
+	.btn-d {
+		display: flex;
 	}
 </style>
