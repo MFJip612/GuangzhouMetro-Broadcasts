@@ -127,7 +127,7 @@ dist
 .pnp.*
 /.hbuilderx/
 /.vite/
-/unpackage/*
+/unpackage/
 dist/**
 .project
 .DS_Store
