@@ -1,9 +1,9 @@
 {
-    "name" : "gzmtr_broadcaster",
+    "name" : "广州地铁报站模拟器",
     "appid" : "__UNI__F6660CD",
     "description" : "广州/佛山地铁报站模拟器",
-    "versionName" : "1.0.4",
-    "versionCode" : 104,
+    "versionName" : "1.0.5",
+    "versionCode" : 105,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -40,16 +40,19 @@
                     "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
                 ],
                 "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ],
-                "minSdkVersion" : 21,
+                "minSdkVersion" : 25,
                 "targetSdkVersion" : 33,
                 "schemes" : "gzmtrgb"
             },
             /* ios打包配置 */
             "ios" : {
-                "idfa" : true
+                "idfa" : true,
+                "dSYMs" : false
             },
             /* SDK配置 */
-            "sdkConfigs" : {},
+            "sdkConfigs" : {
+                "ad" : {}
+            },
             "splashscreen" : {
                 "useOriginalMsgbox" : true,
                 "androidStyle" : "common",
