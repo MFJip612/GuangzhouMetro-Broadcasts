@@ -10,7 +10,7 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/line5/hpnp2jk" delta="1">
+		<!-- <navigator url="/pages/line5/hpnp2jk" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>黄埔新港——滘口</text>
@@ -19,7 +19,7 @@
 					<text>From Huangpu New Port towards Jiaokou</text>
 				</view>
 			</view>
-		</navigator>
+		</navigator> -->
 	</view>
 </template>
 

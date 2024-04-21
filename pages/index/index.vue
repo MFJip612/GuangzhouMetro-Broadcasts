@@ -11,29 +11,31 @@
 					</view>
 				</view>
 			</navigator>
-			<view class="line line-2">
-				<text class="num">2</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 2</text>
+			<!-- <navigator url="/pages/line2/line2">
+				<view class="line line-2">
+					<text class="num">2</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 2</text>
+					</view>
 				</view>
-			</view>
+			</navigator> -->
 			<navigator url="/pages/line3/line3">
-			<view class="line line-3">
-				<text class="num">3</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 3</text>
+				<view class="line line-3">
+					<text class="num">3</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 3</text>
+					</view>
 				</view>
-			</view>
 			</navigator>
-			<view class="line line-4">
+			<!-- <view class="line line-4">
 				<text class="num">4</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 4</text>
 				</view>
-			</view>
+			</view> -->
 			<navigator url="/pages/line5/line5">
 				<view class="line line-5">
 					<text class="num">5</text>
@@ -43,7 +45,7 @@
 					</view>
 				</view>
 			</navigator>
-			<view class="line line-6">
+			<!-- <view class="line line-6">
 				<text class="num">6</text>
 				<view class="col">
 					<text class="cn">号线</text>
@@ -118,7 +120,7 @@
 					<text class="cn">线</text>
 					<text class="en">Line</text>
 				</view>
-			</view>
+			</view> -->
 		</view>
 		<view class="text-area"
 			style="justify-content: center;display: flex;flex-direction: column;align-items: center;">

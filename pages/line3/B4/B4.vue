@@ -10,7 +10,7 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/line3/B4/apn2tyxl" delta="1">
+		<!-- <navigator url="/pages/line3/B4/apn2tyxl" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>机场北——体育西路</text>
@@ -19,7 +19,7 @@
 					<text>From Airport N. towards Tiyu Xilu</text>
 				</view>
 			</view>
-		</navigator>
+		</navigator> -->
 	</view>
 </template>
 

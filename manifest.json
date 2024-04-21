@@ -2,8 +2,8 @@
     "name" : "广州地铁报站模拟器",
     "appid" : "__UNI__F6660CD",
     "description" : "广州/佛山地铁报站模拟器",
-    "versionName" : "1.0.5",
-    "versionCode" : 105,
+    "versionName" : "1.0.6",
+    "versionCode" : 106,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -11,7 +11,7 @@
         "nvueStyleCompiler" : "uni-app",
         "compilerVersion" : 3,
         "splashscreen" : {
-            "alwaysShowBeforeRender" : false,
+            "alwaysShowBeforeRender" : true,
             "waiting" : false,
             "autoclose" : true,
             "delay" : 0
@@ -55,8 +55,13 @@
             },
             "splashscreen" : {
                 "useOriginalMsgbox" : true,
-                "androidStyle" : "common",
-                "iosStyle" : "common"
+                "androidStyle" : "default",
+                "iosStyle" : "common",
+                "android" : {
+                    "hdpi" : "unpackage/res/imgs/drawable-hdpi/splash.9.png",
+                    "xhdpi" : "unpackage/res/imgs/drawable-xhdpi/splash.9.png",
+                    "xxhdpi" : "unpackage/res/imgs/drawable-xxhdpi/splash.9.png"
+                }
             },
             "icons" : {
                 "android" : {

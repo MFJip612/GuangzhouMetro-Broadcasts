@@ -10,7 +10,7 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/line1/gzers2xl" delta="1">
+		<!-- <navigator url="/pages/line1/gzers2xl" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>广州东站——西塱</text>
@@ -19,7 +19,7 @@
 					<text>From Guangzhou East Railway Station towards Xilang</text>
 				</view>
 			</view>
-		</navigator>
+		</navigator> -->
 	</view>
 </template>
 
@@ -34,9 +34,10 @@
 </script>
 
 <style lang="scss">
-	navigator{
+	navigator {
 		width: initial;
 	}
+
 	.line {
 		background-color: #F3D03E;
 		border-radius: 20rpx;
