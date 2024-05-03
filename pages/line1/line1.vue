@@ -33,12 +33,15 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	navigator {
 		width: initial;
 	}
 
 	.line {
+		margin: 50rpx auto;
+		padding: 10rpx;
+		width: max-content;
 		background-color: #F3D03E;
 		border-radius: 20rpx;
 		position: relative;
@@ -47,7 +50,6 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		margin: 50rpx auto;
 
 		.cn {
 			font-family: '黑体';
