@@ -1,5 +1,5 @@
 <template>
-	<navigator url="/pages/line2/gzsrs2jhwg" delta="1">
+	<!-- <navigator url="/pages/line2/gzsrs2jhwg" delta="1">
 		<view class="line">
 			<view class="cn">
 				<text>广州南站——嘉禾望岗</text>
@@ -8,7 +8,7 @@
 				<text>From Guangzhou South Railway Station towards Jiahewanggang</text>
 			</view>
 		</view>
-	</navigator>
+	</navigator> -->
 	<navigator url="/pages/line2/jhwg2gzsrs" delta="1">
 		<view class="line">
 			<view class="cn">

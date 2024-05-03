@@ -32,28 +32,28 @@
 			}
 		},
 		{
-			"path": "pages/line5/line5",
+			"path": "pages/line2/line2",
 			"style": {
-				"navigationBarTitleText": "5号线\nLine 5",
-				"navigationBarBackgroundColor": "#C5003E",
+				"navigationBarTitleText": "2号线\nLine 2",
+				"navigationBarBackgroundColor": "#00629B",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
 		},
 		{
-			"path": "pages/line5/jk2hpnp",
+			"path": "pages/line2/gzsrs2jhwg",
 			"style": {
-				"navigationBarTitleText": "滘口——黄埔新港\nFrom Jiaokou towards Huangpu New Port",
-				"navigationBarBackgroundColor": "#C5003E",
+				"navigationBarTitleText": "广州南站——嘉禾望岗\nFrom Guangzhou South Railway Station towards Jiahewanggang",
+				"navigationBarBackgroundColor": "#00629B",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
 		},
 		{
-			"path": "pages/line5/hpnp2jk",
+			"path": "pages/line2/jhwg2gzsrs",
 			"style": {
-				"navigationBarTitleText": "黄埔新港——滘口\nFrom Huangpu New Port towards Jiaokou",
-				"navigationBarBackgroundColor": "#C5003E",
+				"navigationBarTitleText": "嘉禾望岗——广州南站\nFrom Jiahewanggang towards Guangzhou South Railway Station",
+				"navigationBarBackgroundColor": "#00629B",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
@@ -95,28 +95,28 @@
 			}
 		},
 		{
-			"path": "pages/line2/line2",
+			"path": "pages/line5/line5",
 			"style": {
-				"navigationBarTitleText": "2号线\nLine 2",
-				"navigationBarBackgroundColor": "#00629B",
+				"navigationBarTitleText": "5号线\nLine 5",
+				"navigationBarBackgroundColor": "#C5003E",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
 		},
 		{
-			"path": "pages/line2/gzsrs2jhwg",
+			"path": "pages/line5/jk2hpnp",
 			"style": {
-				"navigationBarTitleText": "广州南站——嘉禾望岗\nFrom Guangzhou South Railway Station towards Jiahewanggang",
-				"navigationBarBackgroundColor": "#00629B",
+				"navigationBarTitleText": "滘口——黄埔新港\nFrom Jiaokou towards Huangpu New Port",
+				"navigationBarBackgroundColor": "#C5003E",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
 		},
 		{
-			"path": "pages/line2/jhwg2gzsrs",
+			"path": "pages/line5/hpnp2jk",
 			"style": {
-				"navigationBarTitleText": "嘉禾望岗——广州南站\nFrom Jiahewanggang towards Guangzhou South Railway Station",
-				"navigationBarBackgroundColor": "#00629B",
+				"navigationBarTitleText": "黄埔新港——滘口\nFrom Huangpu New Port towards Jiaokou",
+				"navigationBarBackgroundColor": "#C5003E",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
