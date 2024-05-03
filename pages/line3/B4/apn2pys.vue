@@ -1,12 +1,10 @@
 <template>
 	<view>
 		<uni-group v-for="item in stationRes" :title="item.title+'    '+item.subtitle" top="20" mode="card">
-			<view>分组{{item.title}} 的内容</view>
-			<view>The content of the group {{item.subtitle}}</view>
-			<view class="btn-d">
-				<button @click="PlaySound(item.src)">报站</button>
-				<button class="stop-play" @click="stopPlay()">停止播放</button>
-			</view>
+			<view>{{item.title}} 站</view>
+			<view>{{item.subtitle}} Station</view>
+			<button @click="PlaySound(item.src)">报站</button>
+			<button class="stop-play" @click="stopPlay()">停止播放</button>
 		</uni-group>
 	</view>
 </template>
@@ -143,14 +141,14 @@
 				}]
 			}
 		},
-	methods: {
+		methods: {
 
-	}
+		}
 	}
 </script>
 
 <style lang="scss">
-	.btn-d{
+	.btn-d {
 		display: flex;
 	}
 </style>
