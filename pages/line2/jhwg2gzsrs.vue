@@ -95,45 +95,45 @@
 					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/The2ndWorker\'sCulturalPalace.mp3'
 				}, {
 					title: '江南西',
-					subtitle: 'Tancun',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Tancun.mp3'
+					subtitle: 'Jiangnanxi',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Jiangnanxi.mp3'
 				}, {
 					title: '昌岗',
-					subtitle: 'Yuancun',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Yuancun.mp3'
+					subtitle: 'Changgang',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Changgang.mp3'
 				}, {
 					title: '江泰路',
-					subtitle: 'Keyun Lu',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/KeyunLu.mp3',
+					subtitle: 'Jiangtai Lu',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/JiangtaiLu.mp3',
 
 				}, {
 					title: '东晓南',
-					subtitle: 'Chebeinan',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Chebeinan.mp3'
+					subtitle: 'Dongxiaonan',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Dongxiaonan.mp3'
 				}, {
 					title: '南洲',
-					subtitle: 'Dongpu',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Dongpu.mp3'
+					subtitle: 'Nanzhou',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Nanzhou.mp3'
 				}, {
 					title: '洛溪',
-					subtitle: 'Sanxi',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Sanxi.mp3'
+					subtitle: 'Luoxi',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Luoxi.mp3'
 				}, {
 					title: '南浦',
-					subtitle: 'Yuzhu',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Yuzhu.mp3'
+					subtitle: 'Nanpu',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Nanpu.mp3'
 				}, {
 					title: '会江',
-					subtitle: 'Dashadi',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Dashadi.mp3'
+					subtitle: 'Huijiang',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Huijiang.mp3'
 				}, {
 					title: '石壁',
-					subtitle: 'Dashadong',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Dashadong.mp3'
+					subtitle: 'Shibi',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Shibi.mp3'
 				}, {
 					title: '广州南站',
-					subtitle: 'Wenchong',
-					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/Wenchong.mp3'
+					subtitle: 'Guangzhou South Railway Station',
+					src: 'https://vip.123pan.cn/1812581465/broadcast/2/2gzsrs/GuangzhouSouthRailwayStation.mp3'
 				}]
 			}
 		}
