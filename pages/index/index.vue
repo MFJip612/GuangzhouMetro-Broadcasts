@@ -11,7 +11,7 @@
 					</view>
 				</view>
 			</navigator>
-			<!-- <navigator url="/pages/line2/line2">
+			<navigator url="/pages/line2/line2">
 				<view class="line line-2">
 					<text class="num">2</text>
 					<view class="col">
@@ -19,7 +19,7 @@
 						<text class="en">Line 2</text>
 					</view>
 				</view>
-			</navigator> -->
+			</navigator>
 			<navigator url="/pages/line3/line3">
 				<view class="line line-3">
 					<text class="num">3</text>
