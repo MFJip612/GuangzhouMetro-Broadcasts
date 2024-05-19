@@ -66,7 +66,7 @@
 					<text class="en">Line 8</text>
 				</view>
 			</view>
-			<view class="line line-9">
+			<view class="line line-9 color-black">
 				<text class="num">9</text>
 				<view class="col">
 					<text class="cn">号线</text>
@@ -181,6 +181,7 @@
 		text-align: center;
 		justify-content: center;
 		align-items: center;
+		color: #FFF;
 
 		.num {
 			position: relative;
@@ -211,12 +212,16 @@
 		color: #FFF;
 	}
 
+	.color-black {
+		color: #000;
+	}
+
 	.line-1 {
 		background-color: #F3D03E;
 	}
 
 	.line-2 {
-		// color: #FFF;
+		color: #FFF;
 		background-color: #00629B;
 	}
 
