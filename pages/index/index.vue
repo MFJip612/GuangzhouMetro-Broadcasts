@@ -207,6 +207,10 @@
 		}
 	}
 
+	.color-white {
+		color: #FFF;
+	}
+
 	.line-1 {
 		background-color: #F3D03E;
 	}
