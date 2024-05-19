@@ -87,21 +87,21 @@
 					<text class="en">Line 14</text>
 				</view>
 			</view>
-			<view class="line line-18 color-white">
+			<view class="line line-18">
 				<text class="num">18</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 18</text>
 				</view>
 			</view>
-			<view class="line line-21 color-white">
+			<view class="line line-21">
 				<text class="num">21</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 21</text>
 				</view>
 			</view>
-			<view class="line line-22 color-white">
+			<view class="line line-22">
 				<text class="num">22</text>
 				<view class="col">
 					<text class="cn">号线</text>
@@ -114,7 +114,7 @@
 					<text class="en">Guangfo Line</text>
 				</view>
 			</view>
-			<view class="line line-apm color-white">
+			<view class="line line-apm">
 				<text class="num">APM</text>
 				<view class="col">
 					<text class="cn">线</text>
