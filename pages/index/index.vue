@@ -12,7 +12,7 @@
 				</view>
 			</navigator>
 			<navigator url="/pages/line2/line2">
-				<view class="line line-2">
+				<view class="line line-2 color-white">
 					<text class="num">2</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -21,7 +21,7 @@
 				</view>
 			</navigator>
 			<navigator url="/pages/line3/line3">
-				<view class="line line-3">
+				<view class="line line-3 color-white">
 					<text class="num">3</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -37,7 +37,7 @@
 				</view>
 			</view> -->
 			<navigator url="/pages/line5/line5">
-				<view class="line line-5">
+				<view class="line line-5 color-white">
 					<text class="num">5</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -45,21 +45,21 @@
 					</view>
 				</view>
 			</navigator>
-			<!-- <view class="line line-6">
+			<!-- <view class="line line-6 color-white">
 				<text class="num">6</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 6</text>
 				</view>
 			</view>
-			<view class="line line-7">
+			<view class="line line-7 color-white">
 				<text class="num">7</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 7</text>
 				</view>
 			</view>
-			<view class="line line-8">
+			<view class="line line-8 color-white">
 				<text class="num">8</text>
 				<view class="col">
 					<text class="cn">号线</text>
@@ -73,35 +73,35 @@
 					<text class="en">Line 9</text>
 				</view>
 			</view>
-			<view class="line line-13">
+			<view class="line line-13 color-white">
 				<text class="num">13</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 13</text>
 				</view>
 			</view>
-			<view class="line line-14">
+			<view class="line line-14 color-white">
 				<text class="num">14</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 14</text>
 				</view>
 			</view>
-			<view class="line line-18">
+			<view class="line line-18 color-white">
 				<text class="num">18</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 18</text>
 				</view>
 			</view>
-			<view class="line line-21">
+			<view class="line line-21 color-white">
 				<text class="num">21</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 21</text>
 				</view>
 			</view>
-			<view class="line line-22">
+			<view class="line line-22 color-white">
 				<text class="num">22</text>
 				<view class="col">
 					<text class="cn">号线</text>
@@ -114,7 +114,7 @@
 					<text class="en">Guangfo Line</text>
 				</view>
 			</view>
-			<view class="line line-apm">
+			<view class="line line-apm color-white">
 				<text class="num">APM</text>
 				<view class="col">
 					<text class="cn">线</text>
