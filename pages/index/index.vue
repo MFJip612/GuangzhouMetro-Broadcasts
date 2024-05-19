@@ -3,7 +3,7 @@
 		<image src="/static/images/Guangzhou_Metro_logo.svg" style="width: 100%;height: 80rpx;"></image>
 		<view class="choose">
 			<navigator url="/pages/line1/line1">
-				<view class="line line-1">
+				<view class="line line-1 color-black">
 					<text class="num">1</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -12,7 +12,7 @@
 				</view>
 			</navigator>
 			<navigator url="/pages/line2/line2">
-				<view class="line line-2 color-white">
+				<view class="line line-2">
 					<text class="num">2</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -21,7 +21,7 @@
 				</view>
 			</navigator>
 			<navigator url="/pages/line3/line3">
-				<view class="line line-3 color-white">
+				<view class="line line-3">
 					<text class="num">3</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -37,7 +37,7 @@
 				</view>
 			</view> -->
 			<navigator url="/pages/line5/line5">
-				<view class="line line-5 color-white">
+				<view class="line line-5">
 					<text class="num">5</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -45,21 +45,21 @@
 					</view>
 				</view>
 			</navigator>
-			<!-- <view class="line line-6 color-white">
+			<!-- <view class="line line-6">
 				<text class="num">6</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 6</text>
 				</view>
 			</view>
-			<view class="line line-7 color-white">
+			<view class="line line-7">
 				<text class="num">7</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 7</text>
 				</view>
 			</view>
-			<view class="line line-8 color-white">
+			<view class="line line-8">
 				<text class="num">8</text>
 				<view class="col">
 					<text class="cn">号线</text>
@@ -73,14 +73,14 @@
 					<text class="en">Line 9</text>
 				</view>
 			</view>
-			<view class="line line-13 color-white">
+			<view class="line line-13">
 				<text class="num">13</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 13</text>
 				</view>
 			</view>
-			<view class="line line-14 color-white">
+			<view class="line line-14">
 				<text class="num">14</text>
 				<view class="col">
 					<text class="cn">号线</text>
