@@ -216,7 +216,7 @@
 	}
 
 	.line-2 {
-		color: #FFF;
+		// color: #FFF;
 		background-color: #00629B;
 	}
 
