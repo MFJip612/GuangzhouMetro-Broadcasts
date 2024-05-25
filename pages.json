@@ -122,20 +122,21 @@
 			}
 		},
 		{
-			"path" : "pages/line8/line8",
-			"style" : 
-			{
-				"navigationBarTitleText" : "8号线\nLine 8",
+			"path": "pages/line8/line8",
+			"style": {
+				"navigationBarTitleText": "8号线\nLine 8",
 				"navigationBarBackgroundColor": "#008C95",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
 		},
 		{
-			"path" : "pages/line8/jx2wsw",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
+			"path": "pages/line8/jx2wsw",
+			"style": {
+				"navigationBarTitleText": "滘心——万胜围\nFrom Jiaoxin towards Wanshengwei",
+				"navigationBarBackgroundColor": "#008C95",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
 			}
 		}
 	],
