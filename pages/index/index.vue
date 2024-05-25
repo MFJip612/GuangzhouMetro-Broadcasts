@@ -58,7 +58,7 @@
 					<text class="cn">号线</text>
 					<text class="en">Line 7</text>
 				</view>
-			</view>
+			</view>-->
 			<view class="line line-8">
 				<text class="num">8</text>
 				<view class="col">
@@ -66,7 +66,7 @@
 					<text class="en">Line 8</text>
 				</view>
 			</view>
-			<view class="line line-9 color-black">
+			<!--<view class="line line-9 color-black">
 				<text class="num">9</text>
 				<view class="col">
 					<text class="cn">号线</text>
