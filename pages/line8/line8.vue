@@ -41,7 +41,7 @@
 		padding: 10rpx;
 		width: max-content;
 		color: #fff;
-		background-color: #00629B;
+		background-color: #008C95;
 		border-radius: 20rpx;
 		position: relative;
 		display: flex;
