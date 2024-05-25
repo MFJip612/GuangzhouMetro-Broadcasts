@@ -33,8 +33,8 @@
 				stopPlay,
 				isPhone,
 				stationRes: [{
-					title: '',
-					subtitle: '',
+					title: 'demo',
+					subtitle: 'demo',
 					src: 'https://vip.123pan.cn/1812581465/broadcast/8/2wsw/demo.mp3'
 				}]
 			}
