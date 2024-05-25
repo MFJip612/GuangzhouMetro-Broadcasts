@@ -130,6 +130,13 @@
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path" : "pages/line8/jx2wsw",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {
