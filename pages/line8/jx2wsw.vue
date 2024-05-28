@@ -46,6 +46,10 @@
 						title: '亭岗',
 						subtitle: 'Tinggang',
 						src: 'https://vip.123pan.cn/1812581465/broadcast/8/2wsw/tg.mp3'
+					},
+					{
+						title:'小坪',
+						subtitle:'Xiaoping'
 					}
 				]
 			}
