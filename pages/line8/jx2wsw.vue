@@ -50,6 +50,10 @@
 					{
 						title: '小坪',
 						subtitle: 'Xiaoping'
+					},
+					{
+						title:'石潭',
+						subtitle:'Shitan'
 					}
 				]
 			}
