@@ -62,6 +62,10 @@
 					{
 						title:'聚龙',
 						subtitle:'Julong'
+					},
+					{
+						title:'上步',
+						subtitle:'Shangbu'
 					}
 				]
 			}
