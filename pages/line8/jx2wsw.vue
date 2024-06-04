@@ -48,16 +48,16 @@
 						src: 'https://vip.123pan.cn/1812581465/broadcast/8/2wsw/tg.mp3'
 					},
 					{
-						title:'石井',
-						subtitle:'Shijing'
+						title: '石井',
+						subtitle: 'Shijing'
 					},
 					{
 						title: '小坪',
 						subtitle: 'Xiaoping'
 					},
 					{
-						title:'石潭',
-						subtitle:'Shitan'
+						title: '石潭',
+						subtitle: 'Shitan'
 					}
 				]
 			}
