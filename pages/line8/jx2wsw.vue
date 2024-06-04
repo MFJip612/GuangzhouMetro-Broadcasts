@@ -66,6 +66,10 @@
 					{
 						title:'上步',
 						subtitle:'Shangbu'
+					},
+					{
+						title:'同德',
+						subtitle:'Tongde'
 					}
 				]
 			}
