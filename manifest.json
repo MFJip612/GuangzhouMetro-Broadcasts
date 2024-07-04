@@ -141,7 +141,7 @@
         "unipush" : {
             "enable" : false
         },
-        "template" : "template.h5.html"
+        "template" : ""
     },
     "locale" : "auto"
 }
