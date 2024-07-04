@@ -128,7 +128,7 @@
         "title" : "广州地铁报站器",
         "router" : {
             "base" : "",
-            "mode" : "history"
+            "mode" : "hash"
         },
         "uniStatistics" : {
             "enable" : true
