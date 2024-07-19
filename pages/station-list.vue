@@ -15,8 +15,11 @@
 <script>
 	export default {
 		data() {
+			function getStationList(){
+				
+			}
 			return {
-
+			getStationList
 			}
 		},
 		methods: {
