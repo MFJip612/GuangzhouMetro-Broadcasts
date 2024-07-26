@@ -60,13 +60,13 @@
 				</view>
 			</view>-->
 			<navigator url="/pages/line8/line8">
-			<view class="line line-8">
-				<text class="num">8</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 8</text>
+				<view class="line line-8">
+					<text class="num">8</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 8</text>
+					</view>
 				</view>
-			</view>
 			</navigator>
 			<!--<view class="line line-9 color-black">
 				<text class="num">9</text>
@@ -310,6 +310,22 @@
 
 		.num {
 			font-size: 2.85rem;
+		}
+	}
+
+	.intercity {
+		height: 4.5834rem;
+		color: #FFF;
+		background-color: rgb(42, 90, 166);
+
+		.col {
+			.cn {
+				font-size: 2.3rem;
+			}
+
+			.en {
+				font-size: 1.25rem;
+			}
 		}
 	}
 </style>
