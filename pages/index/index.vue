@@ -123,6 +123,30 @@
 					<text class="en">Line</text>
 				</view>
 			</view> -->
+			<view class="line intercity">
+				<view class="col">
+					<text class="cn">广清城际</text>
+					<text class="en">Guangzhou-Qingyuan Intercity</text>
+				</view>
+			</view>
+			<view class="line intercity donghuan">
+				<view class="col">
+					<text class="cn">广州东环城际</text>
+					<text class="en">Guangzhou East Ring Intercity</text>
+				</view>
+			</view>
+			<view class="line intercity">
+				<view class="col">
+					<text class="cn">广惠城际</text>
+					<text class="en">Guangzhou-Huizhou Intercity</text>
+				</view>
+			</view>
+			<view class="line intercity">
+				<view class="col">
+					<text class="cn">广肇城际</text>
+					<text class="en">Guangzhou-Zhaoqing Intercity</text>
+				</view>
+			</view>
 		</view>
 		<view class="text-area"
 			style="justify-content: center;display: flex;flex-direction: column;align-items: center;">
@@ -320,11 +344,29 @@
 
 		.col {
 			.cn {
-				font-size: 2.3rem;
+				font-size: 2rem;
 			}
 
 			.en {
-				font-size: 1.25rem;
+				font-size: .65rem;
+			}
+		}
+	}
+	.guangqing{
+		.col {
+			.en {
+				font-size: .64rem;
+			}
+		}
+	}
+	.donghuan {
+		.col {
+			.cn {
+				font-size: 1.4rem;
+			}
+
+			.en {
+				font-size: .6rem;
 			}
 		}
 	}
