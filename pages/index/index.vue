@@ -123,7 +123,7 @@
 					<text class="en">Line</text>
 				</view>
 			</view> -->
-			<view class="line intercity">
+			<view class="line intercity guangqing">
 				<view class="col">
 					<text class="cn">广清城际</text>
 					<text class="en">Guangzhou-Qingyuan Intercity</text>
