@@ -347,7 +347,7 @@
 		width: auto;
 		color: #FFF;
 		background-color: rgb(42, 90, 166);
-
+		border-radius: 10rpx;
 		.col {
 			.cn {
 				font-size: 2.3rem;
