@@ -343,18 +343,18 @@
 
 	.intercity {
 		height: 4.5834rem;
-		padding: 10rpx;
+		padding: 1% 2%;
 		width: auto;
 		color: #FFF;
 		background-color: rgb(42, 90, 166);
 		border-radius: 10rpx;
 		.col {
 			.cn {
-				font-size: 2.3rem;
+				font-size: 2.1rem;
 			}
 
 			.en {
-				font-size: 1.25rem;
+				font-size: 1.1rem;
 			}
 		}
 	}
