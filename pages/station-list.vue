@@ -18,8 +18,12 @@
 			function getStationList(){
 				
 			}
+			function selectLine(lineList){
+				
+			}
 			return {
-			getStationList
+			getStationList,
+			selectLine
 			}
 		},
 		methods: {
