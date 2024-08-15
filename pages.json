@@ -145,6 +145,16 @@
 			{
 				"navigationBarTitleText" : ""
 			}
+		},
+		{
+			"path" : "pages/line6/line6",
+			"style" : 
+			{
+				"navigationBarTitleText" : "6号线\nLine 6",
+				"navigationBarBackgroundColor": "#80225F",
+				"navigationBarTextStyle" : "white",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {

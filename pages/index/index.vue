@@ -45,20 +45,22 @@
 					</view>
 				</view>
 			</navigator>
-			<!-- <view class="line line-6">
-				<text class="num">6</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 6</text>
+			<navigator url="/pages/line6/line6">
+				<view class="line line-6">
+					<text class="num">6</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 6</text>
+					</view>
 				</view>
-			</view>
+			</navigator>
 			<view class="line line-7">
 				<text class="num">7</text>
 				<view class="col">
 					<text class="cn">号线</text>
 					<text class="en">Line 7</text>
 				</view>
-			</view>-->
+			</view>
 			<navigator url="/pages/line8/line8">
 				<view class="line line-8">
 					<text class="num">8</text>
@@ -348,6 +350,7 @@
 		color: #FFF;
 		background-color: rgb(42, 90, 166);
 		border-radius: 10rpx;
+
 		.col {
 			.cn {
 				font-size: 2.1rem;
