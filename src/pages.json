@@ -3,20 +3,30 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
 			}
 		},
 		{
-			"path" : "pages/line1/line1",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
+			"path": "pages/line1/line1",
+			"style": {
+				"navigationBarTitleText": "1号线\nLine 1",
+				"navigationBarBackgroundColor": "#F3D03E",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line1/xl2gzers",
+			"style": {
+				"navigationBarTitleText": "西塱——广州东站\nFrom Xilang to Guangzhou East Railway Station",
+				"navigationBarBackgroundColor": "#F3D03E",
+				"enablePullDownRefresh": false
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "广州地铁报站器",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}

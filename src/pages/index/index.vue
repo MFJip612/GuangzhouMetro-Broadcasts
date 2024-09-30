@@ -338,8 +338,8 @@
 	}
 	
 	.intercity {
-	    height: 4.5834rem;
-	    padding: 1% 2%;
+	    height: auto;
+	    padding: 1% 1%;
 	    width: auto;
 	    color: #FFF;
 	    background-color: rgb(42, 90, 166);
