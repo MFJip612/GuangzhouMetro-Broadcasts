@@ -1,7 +1,7 @@
 {
     "name" : "gzmtr_broadcaster",
     "appid" : "__UNI__F6660CD",
-    "description" : "",
+    "description" : "广州/佛山地铁报站模拟器",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,
@@ -10,7 +10,7 @@
         "usingComponents" : true,
         "splashscreen" : {
             "alwaysShowBeforeRender" : true,
-            "waiting" : true,
+            "waiting" : false,
             "autoclose" : true,
             "delay" : 0
         },
@@ -47,7 +47,10 @@
             },
             "ios" : {},
             /* ios打包配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {},
+            "splashscreen" : {
+                "useOriginalMsgbox" : true
+            }
         }
     },
     /* SDK配置 */
