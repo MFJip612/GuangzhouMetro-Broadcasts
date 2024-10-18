@@ -163,194 +163,194 @@
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
+export default {
+	data() {
+		return {
+			title: 'Hello'
 		}
+	},
+	onLoad() {
+
+	},
+	methods: {
+
 	}
+}
 </script>
 
 <style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
+.title {
+	font-size: 36rpx;
+	color: #8f8f94;
+}
 
-	.choose {
-		width: 750rpx;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		margin: 50rpx;
-	}
+.choose {
+	width: 750rpx;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 50rpx;
+}
 
-	.line {
-		margin: 10rpx;
-		position: relative;
-		width: 280rpx;
-		border-radius: 20rpx;
-		display: flex;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-		color: #FFF;
-	}
+.line {
+	margin: 10rpx;
+	position: relative;
+	width: 280rpx;
+	border-radius: 20rpx;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+}
 
-	.line .num {
-		position: relative;
-		text-align: center;
-		font-size: 4rem;
-		font-family: 'Arial';
-	}
+.line .num {
+	position: relative;
+	text-align: center;
+	font-size: 4rem;
+	font-family: 'Arial';
+}
 
-	.line .col {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-	}
+.line .col {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
 
-	.line .col .cn {
-		font-size: 2rem;
-		font-family: '黑体';
-	}
+.line .col .cn {
+	font-size: 2rem;
+	font-family: '黑体';
+}
 
-	.line .col .en {
-		font-size: 1.2rem;
-		font-family: 'Arial';
-	}
+.line .col .en {
+	font-size: 1.2rem;
+	font-family: 'Arial';
+}
 
-	.color-white {
-		color: #FFF;
-	}
+.color-white {
+	color: #FFF;
+}
 
-	.color-black {
-		color: #000;
-	}
+.color-black {
+	color: #000;
+}
 
-	.line-1 {
-		background-color: #F3D03E;
-	}
+.line-1 {
+	background-color: #F3D03E;
+}
 
-	.line-2 {
-		color: #FFF;
-		background-color: #00629B;
-	}
+.line-2 {
+	color: #FFF;
+	background-color: #00629B;
+}
 
-	.line-3 {
-		color: #FFF;
-		background-color: #ECA154;
-	}
+.line-3 {
+	color: #FFF;
+	background-color: #ECA154;
+}
 
-	.line-4 {
-		color: #FFF;
-		background-color: #00843D;
-	}
+.line-4 {
+	color: #FFF;
+	background-color: #00843D;
+}
 
-	.line-5 {
-		color: #FFF;
-		background-color: #C5003E;
-	}
+.line-5 {
+	color: #FFF;
+	background-color: #C5003E;
+}
 
-	.line-6 {
-		color: #FFF;
-		background-color: #80225F;
-	}
+.line-6 {
+	color: #FFF;
+	background-color: #80225F;
+}
 
-	.line-7 {
-		color: #FFF;
-		background-color: #97D700;
-	}
+.line-7 {
+	color: #FFF;
+	background-color: #97D700;
+}
 
-	.line-8 {
-		color: #FFF;
-		background-color: #008C95;
-	}
+.line-8 {
+	color: #FFF;
+	background-color: #008C95;
+}
 
-	.line-9 {
-		background-color: #71CC98;
-	}
+.line-9 {
+	background-color: #71CC98;
+}
 
-	.line-13 {
-		color: #FFF;
-		background-color: #8E8C13;
-	}
+.line-13 {
+	color: #FFF;
+	background-color: #8E8C13;
+}
 
-	.line-14 {
-		color: #FFF;
-		background-color: #81312F;
-	}
+.line-14 {
+	color: #FFF;
+	background-color: #81312F;
+}
 
-	.line-18 {
-		color: #FFF;
-		background-color: #0047BA;
-	}
+.line-18 {
+	color: #FFF;
+	background-color: #0047BA;
+}
 
-	.line-21 {
-		color: #FFF;
-		background-color: #211747;
-	}
+.line-21 {
+	color: #FFF;
+	background-color: #211747;
+}
 
-	.line-22 {
-		color: #FFF;
-		background-color: #CD5228;
-	}
+.line-22 {
+	color: #FFF;
+	background-color: #CD5228;
+}
 
-	.line-gf {
-		height: 4.5834rem;
-		color: #FFF;
-		background-color: #C4D600;
-	}
+.line-gf {
+	height: 4.5834rem;
+	color: #FFF;
+	background-color: #C4D600;
+}
 
-	.line-gf .col .cn {
-		font-size: 2.3rem;
-	}
+.line-gf .col .cn {
+	font-size: 2.3rem;
+}
 
-	.line-gf .col .en {
-		font-size: 1.25rem;
-	}
+.line-gf .col .en {
+	font-size: 1.25rem;
+}
 
-	.line-apm {
-		height: 4.5834rem;
-		color: #FFF;
-		background-color: #00B5E2;
-	}
+.line-apm {
+	height: 4.5834rem;
+	color: #FFF;
+	background-color: #00B5E2;
+}
 
-	.line-apm .num {
-		font-size: 2.85rem;
-	}
+.line-apm .num {
+	font-size: 2.85rem;
+}
 
-	.intercity {
-		height: auto;
-		padding: .5%;
-		width: auto;
-		color: #FFF;
-		background-color: rgb(42, 90, 166);
-		border-radius: 10rpx;
-	}
+.intercity {
+	height: auto;
+	padding: .5%;
+	width: auto;
+	color: #FFF;
+	background-color: rgb(42, 90, 166);
+	border-radius: 10rpx;
+}
 
-	.intercity .col .cn {
-		font-size: 2.1rem;
-	}
+.intercity .col .cn {
+	font-size: 2.1rem;
+}
 
-	.intercity .col .en {
-		font-size: 1.1rem;
-	}
+.intercity .col .en {
+	font-size: 1.1rem;
+}
 </style>
