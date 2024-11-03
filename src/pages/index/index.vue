@@ -163,23 +163,23 @@
 </template>
 
 <script>
-export default {
-	data() {
-		return {
-			title: 'Hello'
+	export default {
+		data() {
+			return {
+				title: 'Hello'
+			}
+		},
+		onLoad() {
+
+		},
+		methods: {
+
 		}
-	},
-	onLoad() {
-
-	},
-	methods: {
-
 	}
-}
 </script>
 
 <style type="scss">
-.content {
+	.content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -201,7 +201,7 @@ export default {
 	margin: 50rpx;
 }
 
-.line {
+/* .line {
 	margin: 10rpx;
 	position: relative;
 	width: 280rpx;
@@ -235,6 +235,43 @@ export default {
 .line .col .en {
 	font-size: 1.2rem;
 	font-family: 'Arial';
+} */
+
+.line {
+	margin: 10rpx;
+	padding: 5rpx 40rpx;
+	position: relative;
+	width: auto;
+	border-radius: 20rpx;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+
+	.num {
+		position: relative;
+		text-align: center;
+		font-size: 4rem;
+		font-family: 'Arial';
+	}
+
+	.col {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		.cn {
+			font-size: 2rem;
+			font-family: '黑体';
+		}
+
+		.en {
+			font-size: 1.2rem;
+			font-family: 'Arial';
+		}
+	}
 }
 
 .color-white {
