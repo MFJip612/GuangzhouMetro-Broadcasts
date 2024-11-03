@@ -38,30 +38,30 @@
 
 <style>
 	navigator {
-	    width: initial;
+		width: initial;
 	}
-	
+
 	.line {
-	    margin: 50rpx auto;
-	    padding: 10rpx;
-	    width: max-content;
-	    background-color: #F3D03E;
-	    border-radius: 20rpx;
-	    position: relative;
-	    display: flex;
-	    flex-direction: column;
-	    justify-content: center;
-	    align-items: center;
-	    text-align: center;
-	}
-	
-	.line .cn {
-	    font-family: '黑体';
-	    font-size: 2rem;
-	}
-	
-	.line .en {
-	    font-family: 'Arial';
-	    font-size: 1.2rem;
+		margin: 50rpx auto;
+		padding: 10rpx;
+		width: max-content;
+		background-color: #F3D03E;
+		border-radius: 20rpx;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		.cn {
+			font-family: '黑体';
+			font-size: 2rem;
+		}
+
+		.en {
+			font-family: 'Arial';
+			font-size: 1.2rem;
+		}
 	}
 </style>
