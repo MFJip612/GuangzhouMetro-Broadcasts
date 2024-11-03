@@ -1,7 +1,7 @@
 <template>
 	<view>
-		<uni-group v-for="item in stationRes" :key="item.title" :title="item.title + '    ' + item.subtitle" top="20" mode="card"
-			class="station">
+		<uni-group v-for="item in stationRes" :key="item.title" :title="item.title + '    ' + item.subtitle" top="20"
+			mode="card" class="station">
 			<view>{{ item.title }} 站</view>
 			<view>{{ item.subtitle }} Station</view>
 			<view class="btdGroup">
@@ -72,10 +72,6 @@ export default {
 @media screen and (min-width: 768px) {
 
 	/* 平板样式 */
-	.stop-play {
-		/* visibility: hidden; */
-		/* display: none; */
-	}
 }
 
 /* 一般认为宽度小于768px的设备为手机 */
