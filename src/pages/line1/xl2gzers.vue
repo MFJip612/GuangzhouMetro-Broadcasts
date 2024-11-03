@@ -40,7 +40,7 @@ export default {
 				const { stationRes } = data;
 				const filteredStations = stationRes.filter(station =>
 					station.destination.includes("GuangzhouEastRailwayStation"));
-				this.stationRes = filteredStations; // 将筛选结果赋值给 stationRes
+				this.stationRes = filteredStations;
 			} catch (error) {
 				console.error('Failed to fetch or filter station resources:', error);
 			}
