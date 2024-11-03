@@ -178,7 +178,7 @@ export default {
 }
 </script>
 
-<style>
+<style type="scss">
 .content {
 	display: flex;
 	flex-direction: column;
