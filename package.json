@@ -1,7 +1,3 @@
-修改函数
-3b6bafc
-package.json
-@@ -1,107 +1,107 @@
 {
   "name": "gzmtr_broadcaster",
   "version": "0.1.0",
