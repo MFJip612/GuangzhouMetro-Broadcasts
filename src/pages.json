@@ -29,7 +29,32 @@
 				"navigationBarBackgroundColor": "#F3D03E",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/broadcast",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/line2/line2",
+			"style": {
+				"navigationBarTitleText": "2号线\nLine 2",
+				"navigationBarBackgroundColor": "#00629B",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line2/jhwg2gzsrs",
+			"style": {
+				"navigationBarTitleText": "嘉禾望岗——广州南站\nFrom Jiahewanggang towards Guangzhou South Railway Station",
+				"navigationBarBackgroundColor": "#00629B",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
 		}
+
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
