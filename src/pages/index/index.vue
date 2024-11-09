@@ -30,12 +30,12 @@
 				</view>
 			</navigator>
 			<!-- <view class="line line-4">
-					<text class="num">4</text>
-					<view class="col">
-						<text class="cn">号线</text>
-						<text class="en">Line 4</text>
-					</view>
-				</view> -->
+				<text class="num">4</text>
+				<view class="col">
+					<text class="cn">号线</text>
+					<text class="en">Line 4</text>
+				</view>
+			</view> -->
 			<navigator url="/pages/line5/line5">
 				<view class="line line-5">
 					<text class="num">5</text>
@@ -71,60 +71,60 @@
 				</view>
 			</navigator>
 			<!--<view class="line line-9 color-black">
-					<text class="num">9</text>
-					<view class="col">
-						<text class="cn">号线</text>
-						<text class="en">Line 9</text>
-					</view>
+				<text class="num">9</text>
+				<view class="col">
+					<text class="cn">号线</text>
+					<text class="en">Line 9</text>
 				</view>
-				<view class="line line-13">
-					<text class="num">13</text>
-					<view class="col">
-						<text class="cn">号线</text>
-						<text class="en">Line 13</text>
-					</view>
+			</view>
+			<view class="line line-13">
+				<text class="num">13</text>
+				<view class="col">
+					<text class="cn">号线</text>
+					<text class="en">Line 13</text>
 				</view>
-				<view class="line line-14">
-					<text class="num">14</text>
-					<view class="col">
-						<text class="cn">号线</text>
-						<text class="en">Line 14</text>
-					</view>
+			</view>
+			<view class="line line-14">
+				<text class="num">14</text>
+				<view class="col">
+					<text class="cn">号线</text>
+					<text class="en">Line 14</text>
 				</view>
-				<view class="line line-18">
-					<text class="num">18</text>
-					<view class="col">
-						<text class="cn">号线</text>
-						<text class="en">Line 18</text>
-					</view>
+			</view>
+			<view class="line line-18">
+				<text class="num">18</text>
+				<view class="col">
+					<text class="cn">号线</text>
+					<text class="en">Line 18</text>
 				</view>
-				<view class="line line-21">
-					<text class="num">21</text>
-					<view class="col">
-						<text class="cn">号线</text>
-						<text class="en">Line 21</text>
-					</view>
+			</view>
+			<view class="line line-21">
+				<text class="num">21</text>
+				<view class="col">
+					<text class="cn">号线</text>
+					<text class="en">Line 21</text>
 				</view>
-				<view class="line line-22">
-					<text class="num">22</text>
-					<view class="col">
-						<text class="cn">号线</text>
-						<text class="en">Line 22</text>
-					</view>
+			</view>
+			<view class="line line-22">
+				<text class="num">22</text>
+				<view class="col">
+					<text class="cn">号线</text>
+					<text class="en">Line 22</text>
 				</view>
-				<view class="line line-gf">
-					<view class="col">
-						<text class="cn">广佛线</text>
-						<text class="en">Guangfo Line</text>
-					</view>
+			</view>
+			<view class="line line-gf">
+				<view class="col">
+					<text class="cn">广佛线</text>
+					<text class="en">Guangfo Line</text>
 				</view>
-				<view class="line line-apm">
-					<text class="num">APM</text>
-					<view class="col">
-						<text class="cn">线</text>
-						<text class="en">Line</text>
-					</view>
-				</view> -->
+			</view>
+			<view class="line line-apm">
+				<text class="num">APM</text>
+				<view class="col">
+					<text class="cn">线</text>
+					<text class="en">Line</text>
+				</view>
+			</view> -->
 		</view>
 		<view class="choose">
 			<view class="line intercity guangqing">
@@ -159,27 +159,30 @@
 			<text class="title">由 <uni-link href="https://space.bilibili.com/9033373/" text="@红茶w">@红茶w</uni-link>
 				提供报站资源</text>
 		</view>
+
+
 	</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
+// import '/static/js/protect.js'
+export default {
+	data() {
+		return {
 
 		}
+	},
+	onLoad() {
+
+	},
+	methods: {
+
 	}
+}
 </script>
 
-<style type="scss">
-	.content {
+<style lang="scss">
+.content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -201,47 +204,10 @@
 	margin: 50rpx;
 }
 
-/* .line {
+.line {
 	margin: 10rpx;
 	position: relative;
 	width: 280rpx;
-	border-radius: 20rpx;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	color: #FFF;
-}
-
-.line .num {
-	position: relative;
-	text-align: center;
-	font-size: 4rem;
-	font-family: 'Arial';
-}
-
-.line .col {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.line .col .cn {
-	font-size: 2rem;
-	font-family: '黑体';
-}
-
-.line .col .en {
-	font-size: 1.2rem;
-	font-family: 'Arial';
-} */
-
-.line {
-	margin: 10rpx;
-	padding: 5rpx 40rpx;
-	position: relative;
-	width: auto;
 	border-radius: 20rpx;
 	display: flex;
 	text-align: center;
@@ -322,6 +288,7 @@
 }
 
 .line-9 {
+	// color: #FFF;
 	background-color: #71CC98;
 }
 
@@ -354,40 +321,44 @@
 	height: 4.5834rem;
 	color: #FFF;
 	background-color: #C4D600;
-}
 
-.line-gf .col .cn {
-	font-size: 2.3rem;
-}
+	.col {
+		.cn {
+			font-size: 2.3rem;
+		}
 
-.line-gf .col .en {
-	font-size: 1.25rem;
+		.en {
+			font-size: 1.25rem;
+		}
+	}
 }
 
 .line-apm {
 	height: 4.5834rem;
 	color: #FFF;
 	background-color: #00B5E2;
-}
 
-.line-apm .num {
-	font-size: 2.85rem;
+	.num {
+		font-size: 2.85rem;
+	}
 }
 
 .intercity {
-	height: auto;
-	padding: .5%;
+	height: 4.5834rem;
+	padding: 1% 2%;
 	width: auto;
 	color: #FFF;
 	background-color: rgb(42, 90, 166);
 	border-radius: 10rpx;
-}
 
-.intercity .col .cn {
-	font-size: 2.1rem;
-}
+	.col {
+		.cn {
+			font-size: 2.1rem;
+		}
 
-.intercity .col .en {
-	font-size: 1.1rem;
+		.en {
+			font-size: 1.1rem;
+		}
+	}
 }
 </style>

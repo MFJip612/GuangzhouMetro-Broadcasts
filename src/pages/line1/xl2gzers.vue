@@ -40,8 +40,10 @@ export default {
 				const {
 					stationRes
 				} = data;
+				const keywords = ["GuangzhouEastRailwayStation", "XilangStart"];
 				const filteredStations = stationRes.filter(station =>
-					station.destination.includes("GuangzhouEastRailwayStation", "XilangStart"));
+					keywords.some(keyword => station.destination.includes(keyword))
+				);
 				this.stationRes = filteredStations;
 			} catch (error) {
 				console.error('Failed to fetch or filter station resources:', error);
