@@ -47,6 +47,24 @@
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/line3/line3",
+			"style": {
+				"navigationBarTitleText": "3号线\nLine 3",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line3/B4/index",
+			"style": {
+				"navigationBarTitleText": "B4",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {

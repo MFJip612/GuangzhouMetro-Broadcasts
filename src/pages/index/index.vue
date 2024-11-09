@@ -196,7 +196,7 @@
 	}
 
 	.choose {
-		width: 20rem;
+		width: 25rem;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
