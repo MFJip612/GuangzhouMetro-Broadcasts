@@ -31,12 +31,6 @@
 			}
 		},
 		{
-			"path": "pages/broadcast",
-			"style": {
-				"navigationBarTitleText": ""
-			}
-		},
-		{
 			"path": "pages/line2/line2",
 			"style": {
 				"navigationBarTitleText": "2号线\nLine 2",
@@ -54,7 +48,6 @@
 				"enablePullDownRefresh": false
 			}
 		}
-
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
