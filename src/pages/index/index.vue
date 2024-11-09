@@ -29,13 +29,15 @@
 					</view>
 				</view>
 			</navigator>
-			<!-- <view class="line line-4">
-				<text class="num">4</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 4</text>
+			<navigator url="">
+				<view class="line line-4">
+					<text class="num">4</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 4</text>
+					</view>
 				</view>
-			</view> -->
+			</navigator>
 			<navigator url="/pages/line5/line5">
 				<view class="line line-5">
 					<text class="num">5</text>
@@ -165,200 +167,199 @@
 </template>
 
 <script>
-// import '/static/js/protect.js'
-export default {
-	data() {
-		return {
+	// import '/static/js/protect.js'
+	export default {
+		data() {
+			return {
+
+			}
+		},
+		onLoad() {
+
+		},
+		methods: {
 
 		}
-	},
-	onLoad() {
-
-	},
-	methods: {
-
 	}
-}
 </script>
 
 <style lang="scss">
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
-}
-
-.choose {
-	width: 750rpx;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: 50rpx;
-}
-
-.line {
-	margin: 10rpx;
-	position: relative;
-	width: 280rpx;
-	border-radius: 20rpx;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-	color: #FFF;
-
-	.num {
-		position: relative;
-		text-align: center;
-		font-size: 4rem;
-		font-family: 'Arial';
-	}
-
-	.col {
-		position: relative;
+	.content {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+	}
+
+	.title {
+		font-size: 36rpx;
+		color: #8f8f94;
+	}
+
+	.choose {
+		width: 20rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		// margin: 50rpx;
+	}
+
+	.line {
+		margin: 10rpx;
+		position: relative;
+		width: 280rpx;
+		border-radius: 20rpx;
+		display: flex;
 		text-align: center;
+		justify-content: center;
+		align-items: center;
+		color: #FFF;
 
-		.cn {
-			font-size: 2rem;
-			font-family: '黑体';
-		}
-
-		.en {
-			font-size: 1.2rem;
+		.num {
+			position: relative;
+			text-align: center;
+			font-size: 4rem;
 			font-family: 'Arial';
 		}
-	}
-}
 
-.color-white {
-	color: #FFF;
-}
+		.col {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
 
-.color-black {
-	color: #000;
-}
+			.cn {
+				font-size: 2rem;
+				font-family: '黑体';
+			}
 
-.line-1 {
-	background-color: #F3D03E;
-}
-
-.line-2 {
-	color: #FFF;
-	background-color: #00629B;
-}
-
-.line-3 {
-	color: #FFF;
-	background-color: #ECA154;
-}
-
-.line-4 {
-	color: #FFF;
-	background-color: #00843D;
-}
-
-.line-5 {
-	color: #FFF;
-	background-color: #C5003E;
-}
-
-.line-6 {
-	color: #FFF;
-	background-color: #80225F;
-}
-
-.line-7 {
-	color: #FFF;
-	background-color: #97D700;
-}
-
-.line-8 {
-	color: #FFF;
-	background-color: #008C95;
-}
-
-.line-9 {
-	// color: #FFF;
-	background-color: #71CC98;
-}
-
-.line-13 {
-	color: #FFF;
-	background-color: #8E8C13;
-}
-
-.line-14 {
-	color: #FFF;
-	background-color: #81312F;
-}
-
-.line-18 {
-	color: #FFF;
-	background-color: #0047BA;
-}
-
-.line-21 {
-	color: #FFF;
-	background-color: #211747;
-}
-
-.line-22 {
-	color: #FFF;
-	background-color: #CD5228;
-}
-
-.line-gf {
-	height: 4.5834rem;
-	color: #FFF;
-	background-color: #C4D600;
-
-	.col {
-		.cn {
-			font-size: 2.3rem;
-		}
-
-		.en {
-			font-size: 1.25rem;
+			.en {
+				font-size: 1.2rem;
+				font-family: 'Arial';
+			}
 		}
 	}
-}
 
-.line-apm {
-	height: 4.5834rem;
-	color: #FFF;
-	background-color: #00B5E2;
-
-	.num {
-		font-size: 2.85rem;
+	.color-white {
+		color: #FFF;
 	}
-}
 
-.intercity {
-	height: 4.5834rem;
-	padding: 1% 2%;
-	width: auto;
-	color: #FFF;
-	background-color: rgb(42, 90, 166);
-	border-radius: 10rpx;
+	.color-black {
+		color: #000;
+	}
 
-	.col {
-		.cn {
-			font-size: 2.1rem;
-		}
+	.line-1 {
+		background-color: #F3D03E;
+	}
 
-		.en {
-			font-size: 1.1rem;
+	.line-2 {
+		color: #FFF;
+		background-color: #00629B;
+	}
+
+	.line-3 {
+		color: #FFF;
+		background-color: #ECA154;
+	}
+
+	.line-4 {
+		color: #FFF;
+		background-color: #00843D;
+	}
+
+	.line-5 {
+		color: #FFF;
+		background-color: #C5003E;
+	}
+
+	.line-6 {
+		color: #FFF;
+		background-color: #80225F;
+	}
+
+	.line-7 {
+		color: #FFF;
+		background-color: #97D700;
+	}
+
+	.line-8 {
+		color: #FFF;
+		background-color: #008C95;
+	}
+
+	.line-9 {
+		// color: #FFF;
+		background-color: #71CC98;
+	}
+
+	.line-13 {
+		color: #FFF;
+		background-color: #8E8C13;
+	}
+
+	.line-14 {
+		color: #FFF;
+		background-color: #81312F;
+	}
+
+	.line-18 {
+		color: #FFF;
+		background-color: #0047BA;
+	}
+
+	.line-21 {
+		color: #FFF;
+		background-color: #211747;
+	}
+
+	.line-22 {
+		color: #FFF;
+		background-color: #CD5228;
+	}
+
+	.line-gf {
+		height: 4.5834rem;
+		color: #FFF;
+		background-color: #C4D600;
+
+		.col {
+			.cn {
+				font-size: 2.3rem;
+			}
+
+			.en {
+				font-size: 1.25rem;
+			}
 		}
 	}
-}
+
+	.line-apm {
+		height: 4.5834rem;
+		color: #FFF;
+		background-color: #00B5E2;
+
+		.num {
+			font-size: 2.85rem;
+		}
+	}
+
+	.intercity {
+		height: 4.5834rem;
+		padding: 1% 2%;
+		width: auto;
+		color: #FFF;
+		background-color: rgb(42, 90, 166);
+		border-radius: 10rpx;
+
+		.col {
+			.cn {
+				font-size: 2.1rem;
+			}
+
+			.en {
+				font-size: 1.1rem;
+			}
+		}
+	}
 </style>
