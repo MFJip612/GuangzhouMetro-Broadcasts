@@ -6,7 +6,7 @@
 					<text>西塱——广州东站</text>
 				</view>
 				<view class="en">
-					<text>From Xilang towards Guangzhou East Railway Station</text>
+					<text>Xilang towards Guangzhou East Railway Station</text>
 				</view>
 			</view>
 		</navigator>

@@ -15,7 +15,7 @@
 				<text>嘉禾望岗——广州南站</text>
 			</view>
 			<view class="en">
-				<text>From Jiahewanggang towards Guangzhou South Railway Station</text>
+				<text>Jiahewanggang towards Guangzhou South Railway Station</text>
 			</view>
 		</view>
 	</navigator>

@@ -25,7 +25,7 @@
 		{
 			"path": "pages/line1/xl2gzers",
 			"style": {
-				"navigationBarTitleText": "西塱——广州东站\nFrom Xilang to Guangzhou East Railway Station",
+				"navigationBarTitleText": "西塱——广州东站\nXilang to Guangzhou East Railway Station",
 				"navigationBarBackgroundColor": "#F3D03E",
 				"enablePullDownRefresh": false
 			}
@@ -42,7 +42,7 @@
 		{
 			"path": "pages/line2/jhwg2gzsrs",
 			"style": {
-				"navigationBarTitleText": "嘉禾望岗——广州南站\nFrom Jiahewanggang towards Guangzhou South Railway Station",
+				"navigationBarTitleText": "嘉禾望岗——广州南站\nJiahewanggang towards Guangzhou South Railway Station",
 				"navigationBarBackgroundColor": "#00629B",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
@@ -69,7 +69,7 @@
 		{
 			"path": "pages/line3/B4/apn2pys",
 			"style": {
-				"navigationBarTitleText": "机场北——番禺广场\nFrom Airport N. towards Panyu Square",
+				"navigationBarTitleText": "机场北——番禺广场\nAirport N. towards Panyu Square",
 				"navigationBarBackgroundColor": "#ECA154",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
@@ -77,9 +77,11 @@
 		},
 		{
 			"path" : "pages/line3/B4/apn2hb",
-			"style" : 
-			{
-				"navigationBarTitleText" : ""
+			"style": {
+				"navigationBarTitleText": "机场北——海傍\nAirport N. towards Haibang",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
 			}
 		}
 	],

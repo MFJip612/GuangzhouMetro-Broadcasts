@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<navigator url="/pages/line3/B4/apr2pys" delta="1">
+		<navigator url="/pages/line3/B4/apn2pys" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>机场北——番禺广场</text>
@@ -10,7 +10,7 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/line3/B4/apr2hb" delta="1">
+		<navigator url="/pages/line3/B4/apn2hb" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>机场北——海傍</text>
