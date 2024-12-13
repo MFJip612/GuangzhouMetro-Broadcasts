@@ -65,6 +65,22 @@
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/line3/B4/apn2pys",
+			"style": {
+				"navigationBarTitleText": "机场北——番禺广场\nFrom Airport N. towards Panyu Square",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/line3/B4/apn2hb",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {
