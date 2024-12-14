@@ -40,7 +40,7 @@
 					const {
 						stationRes
 					} = data;
-					const keywords = ["AirportNStationToHaibang", "HaibangStart"];
+					const keywords = ["AirportNToHaibang", "HaibangStart"];
 					const filteredStations = stationRes.filter(station =>
 						keywords.some(keyword => station.destination.includes(keyword))
 					);
