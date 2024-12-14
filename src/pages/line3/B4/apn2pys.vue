@@ -32,7 +32,7 @@
 			async getStationRes() {
 				try {
 					const response = await fetch(
-						"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/resource.json");
+						"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/res2.json");
 					if (!response.ok) {
 						throw new Error(`HTTP error! Status: ${response.status}`);
 					}
