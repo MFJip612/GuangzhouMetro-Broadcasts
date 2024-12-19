@@ -41,10 +41,9 @@ export default {
 					stationRes
 				} = data;
 				const keywords = ["GuangzhouSouthRailwayStation", "JiahewanggangStart"];
-				const filteredStations = stationRes.filter(station =>
-					keywords.some(keyword => station.destination.includes(keyword))
-				);
-				this.stationRes = filteredStations;
+        this.stationRes = stationRes.filter(station =>
+            keywords.some(keyword => station.destination.includes(keyword))
+        );
 			} catch (error) {
 				console.error('Failed to fetch or filter station resources:', error);
 			}
@@ -58,6 +57,10 @@ export default {
 			if (this.innerAudioContext.onCanplay) {
 				this.innerAudioContext.play();
 			}
+      this.innerAudioContext.onError(() => {
+        console.log(this.innerAudioContext.errCode);
+        console.log(this.innerAudioContext.errMsg);
+      })
 		},
 		stopPlay() {
 			this.innerAudioContext.pause();

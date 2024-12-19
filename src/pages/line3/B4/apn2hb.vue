@@ -13,58 +13,51 @@
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				isPhone: false,
-				innerAudioContext: null,
-				stationRes: [] // 初始化stationRes为一个空数组
-			};
-		},
-		onLoad() {
-			// 初始化 innerAudioContext
-			this.innerAudioContext = uni.createInnerAudioContext();
+export default {
+  data() {
+    return {
+      isPhone: false,
+      innerAudioContext: null,
+      stationRes: [] // 初始化 stationRes 为一个空数组
+    };
+  },
+  onLoad() {
+    // 初始化 innerAudioContext
+    this.innerAudioContext = uni.createInnerAudioContext();
+    // 获取站点资源
+    this.getStationRes();
+  },
+  methods: {
+    async getStationRes() {
+      try {
+        const response = await fetch("https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/res2.json");
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
-			// 获取站点资源
-			this.getStationRes();
-		},
-		methods: {
-			async getStationRes() {
-				try {
-					const response = await fetch(
-						"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/res2.json");
-					if (!response.ok) {
-						throw new Error(`HTTP error! Status: ${response.status}`);
-					}
-					const data = await response.json();
-					const {
-						stationRes
-					} = data;
-					const keywords = ["AirportNToHaibang", "HaibangStart"];
-					const filteredStations = stationRes.filter(station =>
-						keywords.some(keyword => station.destination.includes(keyword))
-					);
-					this.stationRes = filteredStations;
-				} catch (error) {
-					console.error('Failed to fetch or filter station resources:', error);
-				}
-			},
-			PlaySound(src) {
-				if (this.innerAudioContext.onPlay) {
-					this.innerAudioContext.pause();
-					this.innerAudioContext.destroy();
-				}
-				this.innerAudioContext.src = src;
-				if (this.innerAudioContext.onCanplay) {
-					this.innerAudioContext.play();
-				}
-			},
-			stopPlay() {
-				this.innerAudioContext.pause();
-			}
-		}
-	}
+        const data = await response.json();
+        const keywords = ["AirportNToHaibang", "HaibangStart"];
+        this.stationRes = data.stationRes.filter(station =>
+            keywords.some(keyword => station.destination.includes(keyword))
+        );
+      } catch (error) {
+        console.error('Error fetching station resources:', error);
+      }
+    },
+    PlaySound(src) {
+      if (this.innerAudioContext) {
+        this.innerAudioContext.pause();
+        this.innerAudioContext.src = src;
+        this.innerAudioContext.play();
+      }
+    },
+    stopPlay() {
+      if (this.innerAudioContext) {
+        this.innerAudioContext.pause();
+      }
+    }
+  }
+}
 </script>
+
 
 <style>
 	.stations {
