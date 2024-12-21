@@ -1,7 +1,7 @@
 <template>
   <view>
     <uni-group v-for="item in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`" top="20"
-               mode="card" class="station">
+      mode="card" class="station">
       <view>{{ item.title }} 站</view>
       <view>{{ item.subtitle }} Station</view>
       <view class="btnGroup">
@@ -37,7 +37,7 @@ export default {
         const data = await response.json();
         const keywords = ["AirportNToPanyuSquare", "AirportNStart"];
         this.stationRes = data.stationRes.filter(station =>
-            keywords.some(keyword => station.destination.includes(keyword))
+          keywords.some(keyword => station.destination.includes(keyword))
         );
       } catch (error) {
         console.error('Error fetching station resources:', error);
