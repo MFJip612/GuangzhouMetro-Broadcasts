@@ -83,6 +83,15 @@
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path" : "pages/line2/gzsrs2jhwg",
+			"style": {
+				"navigationBarTitleText": "广州南站——嘉禾望岗\nGuangzhou South Railway Station towards Jiahewanggang",
+				"navigationBarBackgroundColor": "#00629B",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {

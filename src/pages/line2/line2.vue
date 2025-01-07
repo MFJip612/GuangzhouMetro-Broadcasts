@@ -1,24 +1,26 @@
 <template>
-	<!-- <navigator url="/pages/line2/gzsrs2jhwg" delta="1">
-		<view class="line">
-			<view class="cn">
-				<text>广州南站——嘉禾望岗</text>
+	<view>
+		<navigator url="/pages/line2/gzsrs2jhwg" delta="1">
+			<view class="line">
+				<view class="cn">
+					<text>广州南站——嘉禾望岗</text>
+				</view>
+				<view class="en">
+					<text>Guangzhou South Railway Station towards Jiahewanggang</text>
+				</view>
 			</view>
-			<view class="en">
-				<text>From Guangzhou South Railway Station towards Jiahewanggang</text>
+		</navigator>
+		<navigator url="/pages/line2/jhwg2gzsrs" delta="1">
+			<view class="line">
+				<view class="cn">
+					<text>嘉禾望岗——广州南站</text>
+				</view>
+				<view class="en">
+					<text>Jiahewanggang towards Guangzhou South Railway Station</text>
+				</view>
 			</view>
-		</view>
-	</navigator> -->
-	<navigator url="/pages/line2/jhwg2gzsrs" delta="1">
-		<view class="line">
-			<view class="cn">
-				<text>嘉禾望岗——广州南站</text>
-			</view>
-			<view class="en">
-				<text>Jiahewanggang towards Guangzhou South Railway Station</text>
-			</view>
-		</view>
-	</navigator>
+		</navigator>
+	</view>
 </template>
 
 <script>
