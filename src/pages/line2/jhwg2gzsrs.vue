@@ -21,6 +21,10 @@ export default {
 			stationRes: [] // 初始化stationRes为一个空数组
 		};
 	},
+	onUnload() {
+		this.innerAudioContext.pause();
+		this.innerAudioContext.destroy();
+	},
 	onLoad() {
 		// 初始化 innerAudioContext
 		this.innerAudioContext = uni.createInnerAudioContext();

@@ -13,99 +13,103 @@
 </template>
 
 <script>
-export default {
-	data() {
-		return {
-			isPhone: false,
-			innerAudioContext: null,
-			stationRes: [] // 初始化stationRes为一个空数组
-		};
-	},
-	onLoad() {
-		// 初始化 innerAudioContext
-		this.innerAudioContext = uni.createInnerAudioContext();
-
-		// 获取站点资源
-		this.getStationRes();
-	},
-	methods: {
-		async getStationRes() {
-			try {
-				const response = await fetch(
-					"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/resource.json");
-				if (!response.ok) {
-					throw new Error(`HTTP error! Status: ${response.status}`);
-				}
-				const data = await response.json();
-				const {
-					stationRes
-				} = data;
-				const keywords = ["GuangzhouEastRailwayStation", "XilangStart"];
-        this.stationRes = stationRes.filter(station =>
-            keywords.some(keyword => station.destination.includes(keyword))
-        );
-			} catch (error) {
-				console.error('Failed to fetch or filter station resources:', error);
-			}
+	export default {
+		data() {
+			return {
+				isPhone: false,
+				innerAudioContext: null,
+				stationRes: [] // 初始化stationRes为一个空数组
+			};
 		},
-		PlaySound(src) {
-			if (this.innerAudioContext.onPlay) {
-				this.innerAudioContext.pause();
-				this.innerAudioContext.destroy();
-			}
-			this.innerAudioContext.src = src;
-			if (this.innerAudioContext.onCanplay) {
-				this.innerAudioContext.play();
-			}
-		},
-		stopPlay() {
+		onUnload() {
 			this.innerAudioContext.pause();
+			this.innerAudioContext.destroy();
+		},
+		onLoad() {
+			// 初始化 innerAudioContext
+			this.innerAudioContext = uni.createInnerAudioContext();
+
+			// 获取站点资源
+			this.getStationRes();
+		},
+		methods: {
+			async getStationRes() {
+				try {
+					const response = await fetch(
+						"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/resource.json");
+					if (!response.ok) {
+						throw new Error(`HTTP error! Status: ${response.status}`);
+					}
+					const data = await response.json();
+					const {
+						stationRes
+					} = data;
+					const keywords = ["GuangzhouEastRailwayStation", "XilangStart"];
+					this.stationRes = stationRes.filter(station =>
+						keywords.some(keyword => station.destination.includes(keyword))
+					);
+				} catch (error) {
+					console.error('Failed to fetch or filter station resources:', error);
+				}
+			},
+			PlaySound(src) {
+				if (this.innerAudioContext.onPlay) {
+					this.innerAudioContext.pause();
+					this.innerAudioContext.destroy();
+				}
+				this.innerAudioContext.src = src;
+				if (this.innerAudioContext.onCanplay) {
+					this.innerAudioContext.play();
+				}
+			},
+			stopPlay() {
+				this.innerAudioContext.pause();
+			}
 		}
 	}
-}
 </script>
 
 <style>
-.stations {
-	color: #fff;
-	background-color: #F3D03E;
-}
+	.stations {
+		color: #fff;
+		background-color: #F3D03E;
+	}
 
-/* 一般认为宽度大于等于768px的设备为平板 */
-@media screen and (min-width: 768px) {
+	/* 一般认为宽度大于等于768px的设备为平板 */
+	@media screen and (min-width: 768px) {
 
-	/* 平板样式 */
-}
+		/* 平板样式 */
+	}
 
-/* 一般认为宽度小于768px的设备为手机 */
-@media screen and (max-width: 767px) {
-	/* 手机样式 */
-}
+	/* 一般认为宽度小于768px的设备为手机 */
+	@media screen and (max-width: 767px) {
+		/* 手机样式 */
+	}
 
-.btnGroup {
-	display: flex;
-	justify-content: center;
-}
+	.btnGroup {
+		display: flex;
+		justify-content: center;
+	}
 
-.btnGroup:first-child {
-	margin-left: auto;
-}
+	.btnGroup:first-child {
+		margin-left: auto;
+	}
 
-.btnGroup:last-child {
-	margin-right: auto;
-}
+	.btnGroup:last-child {
+		margin-right: auto;
+	}
 
-button {
-	width: 200rpx;
-	display: flex;
-	justify-content: center;
-}
+	button {
+		width: 200rpx;
+		display: flex;
+		justify-content: center;
+	}
 
-.btn-d {
-	display: flex;
-}
+	.btn-d {
+		display: flex;
+	}
 
-.station {
-	width: auto;
-}
+	.station {
+		width: auto;
+	}
 </style>
