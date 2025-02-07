@@ -65,10 +65,8 @@
 			PlaySound(item) {
 				// 清空当前播放队列
 				this.audioQueue = [];
-
 				// 去除item.subtitle中的空格
 				const subtitleWithoutSpaces = item.subtitle.replace(/\s+/g, "");
-
 				// 固定顺序的基础音频文件
 				const baseAudio = [
 					"_destination_chs.mp3",
@@ -87,10 +85,8 @@
 					`${subtitleWithoutSpaces}_eng.mp3`,
 					"_goingto.mp3"
 				];
-
 				// 根据item.isTransfer的值决定是否插入_transfer.mp3
 				const insertTransfer = item.isTransfer;
-
 				// 构建最终的播放队列
 				this.audioQueue = baseAudio.filter(audio => {
 					if (audio === "_transfer.mp3") {
@@ -98,15 +94,12 @@
 					}
 					return true;
 				});
-
 				this.playNextAudio();
 			},
 			playNextAudio() {
 				if (this.audioQueue.length === 0) return;
-
 				const nextAudio = this.audioQueue.shift();
 				const audioUrl = `https://vip.123pan.cn/1812581465/broadcast/2/${nextAudio}`;
-
 				// 检查音频文件是否存在
 				fetch(audioUrl, {
 						method: 'HEAD'
@@ -132,8 +125,6 @@
 		}
 	};
 </script>
-
-
 <style>
 	.stations {
 		color: #fff;
