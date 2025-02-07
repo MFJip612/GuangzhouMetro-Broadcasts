@@ -32,12 +32,10 @@
 		}
 	}
 </script>
-
 <style lang="scss" scoped>
 	navigator {
 		width: initial;
 	}
-
 	.line {
 		margin: 50rpx auto;
 		padding: 10rpx;
@@ -51,12 +49,10 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-
 		.cn {
 			font-family: '黑体';
 			font-size: 2rem;
 		}
-
 		.en {
 			font-family: 'Arial';
 			font-size: 1.2rem;
