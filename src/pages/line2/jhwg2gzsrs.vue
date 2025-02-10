@@ -28,7 +28,6 @@ export default {
 	onLoad() {
 		// 初始化 innerAudioContext
 		this.innerAudioContext = uni.createInnerAudioContext();
-
 		// 获取站点资源
 		this.getStationRes();
 	},
