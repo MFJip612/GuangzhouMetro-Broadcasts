@@ -11,8 +11,6 @@
 		</uni-group>
 	</view>
 </template>
-
-
 <script>
 	export default {
 		data() {
@@ -63,41 +61,32 @@
 		}
 	}
 </script>
-
-
 <style>
 	.stations {
 		color: #fff;
 		background-color: #00629b;
 	}
-
 	/* 一般认为宽度大于等于768px的设备为平板 */
 	@media screen and (min-width: 768px) {
 
 		/* 平板样式 */
 	}
-
 	/* 一般认为宽度小于768px的设备为手机 */
 	@media screen and (max-width: 767px) {
 		/* 手机样式 */
 	}
-
 	.btnGroup {
 		display: flex;
 		justify-content: center;
 	}
-
 	button {
 		width: 200rpx;
 		display: flex;
 		justify-content: center;
 	}
-
-
 	.btn-d {
 		display: flex;
 	}
-
 	.station {
 		width: auto;
 	}
