@@ -76,7 +76,7 @@
 			}
 		},
 		{
-			"path" : "pages/line3/B4/apn2hb",
+			"path": "pages/line3/B4/apn2hb",
 			"style": {
 				"navigationBarTitleText": "机场北——海傍\nAirport N. towards Haibang",
 				"navigationBarBackgroundColor": "#ECA154",
@@ -85,10 +85,28 @@
 			}
 		},
 		{
-			"path" : "pages/line2/gzsrs2jhwg",
+			"path": "pages/line2/gzsrs2jhwg",
 			"style": {
 				"navigationBarTitleText": "广州南站——嘉禾望岗\nGuangzhou South Railway Station towards Jiahewanggang",
 				"navigationBarBackgroundColor": "#00629B",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/guangzhou-zhaoqing-intercity/guangzhou-zhaoqing-intercity",
+			"style": {
+				"navigationBarTitleText": "广肇城际\nGuangzhou-Zhaoqing Intercity",
+				"navigationBarBackgroundColor": "#2a5aa6",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/guangzhou-zhaoqing-intercity/xiaojinkou-zhaoqing",
+			"style": {
+				"navigationBarTitleText": "小金口——肇庆\nXiaojinkou towards Zhaoqing",
+				"navigationBarBackgroundColor": "#2a5aa6",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
