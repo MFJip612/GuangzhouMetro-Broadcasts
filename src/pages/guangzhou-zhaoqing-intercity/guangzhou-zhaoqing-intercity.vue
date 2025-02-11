@@ -38,21 +38,27 @@
 	}
 
 	.line {
-		height: 4.5834rem;
-		padding: 1% 2%;
-		width: auto;
-		color: #FFF;
-		background-color: rgb(42, 90, 166);
-		border-radius: 10rpx;
+		margin: 50rpx auto;
+		padding: 10rpx;
+		width: max-content;
+		color: #fff;
+		background-color: #2a5aa6;
+		border-radius: 20rpx;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 
-		.col {
-			.cn {
-				font-size: 2.1rem;
-			}
+		.cn {
+			font-family: '黑体';
+			font-size: 2rem;
+		}
 
-			.en {
-				font-size: 1.1rem;
-			}
+		.en {
+			font-family: 'Arial';
+			font-size: 1.2rem;
 		}
 	}
 </style>

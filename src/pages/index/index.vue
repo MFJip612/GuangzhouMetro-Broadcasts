@@ -147,7 +147,7 @@
 					<text class="en">Guangzhou-Huizhou Intercity</text>
 				</view>
 			</view>
-			<navigator url="/src/pages/guangzhou-zhaoqing-intercity/guangzhou-zhaoqing-intercity">
+			<navigator url="/pages/guangzhou-zhaoqing-intercity/guangzhou-zhaoqing-intercity">
 				<view class="line intercity">
 					<view class="col">
 						<text class="cn">广肇城际</text>
