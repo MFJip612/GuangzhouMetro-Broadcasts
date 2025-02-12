@@ -127,28 +127,26 @@
 					<text class="en">Line</text>
 				</view>
 			</view> -->
-		</view>
-		<view class="choose">
-			<view class="line intercity guangqing">
+			<view class="line line-intercity guangqing">
 				<view class="col">
 					<text class="cn">广清城际</text>
 					<text class="en">Guangzhou-Qingyuan Intercity</text>
 				</view>
 			</view>
-			<view class="line intercity donghuan">
+			<view class="line line-intercity donghuan">
 				<view class="col">
 					<text class="cn">广州东环城际</text>
 					<text class="en">Guangzhou East Ring Intercity</text>
 				</view>
 			</view>
-			<view class="line intercity">
+			<view class="line line-intercity">
 				<view class="col">
 					<text class="cn">广惠城际</text>
 					<text class="en">Guangzhou-Huizhou Intercity</text>
 				</view>
 			</view>
 			<navigator url="/pages/guangzhou-zhaoqing-intercity/guangzhou-zhaoqing-intercity">
-				<view class="line intercity">
+				<view class="line line-intercity">
 					<view class="col">
 						<text class="cn">广肇城际</text>
 						<text class="en">Guangzhou-Zhaoqing Intercity</text>
@@ -182,6 +180,10 @@
 </script>
 
 <style lang="scss">
+	navigator {
+		width: initial;
+	}
+
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -342,11 +344,9 @@
 		}
 	}
 
-	.intercity {
+	.line-intercity {
+		width: 20rem;
 		height: 4.5834rem;
-		margin: 1% 2%;
-		padding: 1% 2%;
-		width: auto;
 		color: #FFF;
 		background-color: rgb(42, 90, 166);
 		border-radius: 10rpx;
