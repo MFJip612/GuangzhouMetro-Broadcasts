@@ -1,25 +1,71 @@
 <template>
 	<view>
-		<!-- <navigator url="/pages/line2/gzsrs2jhwg" delta="1">
-			<view class="line">
-				<view class="cn">
-					<text>广州南站——嘉禾望岗</text>
+		<view>
+			<text class="train_type" id="local">站站停</text>
+			<navigator delta="1">
+				<view class="line">
+					<view class="cn">
+						<text>小金口——番禺</text>
+					</view>
+					<view class="en">
+						<text>Xiaojinkou Railway Station towards Panyu Railway Station</text>
+					</view>
 				</view>
-				<view class="en">
-					<text>Guangzhou South Railway Station towards Jiahewanggang</text>
+			</navigator>
+			<navigator delta="1">
+				<view class="line">
+					<view class="cn">
+						<text>小金口——佛山西</text>
+					</view>
+					<view class="en">
+						<text>Xiaojinkou Railway Station towards Foshanxi Railway Station</text>
+					</view>
 				</view>
-			</view>
-		</navigator> -->
-		<navigator url="/pages/guangzhou-zhaoqing-intercity/xiaojinkou-zhaoqing" delta="1">
-			<view class="line">
-				<view class="cn">
-					<text>小金口——肇庆</text>
+			</navigator>
+			<navigator url="/pages/guangzhou-zhaoqing-intercity/xiaojinkou-zhaoqing" delta="1">
+				<view class="line">
+					<view class="cn">
+						<text>小金口——肇庆</text>
+					</view>
+					<view class="en">
+						<text>Xiaojinkou Railway Station towards Zhaoqing Railway Station</text>
+					</view>
 				</view>
-				<view class="en">
-					<text>Xiaojinkou Railway Station towards Zhaoqing Railway Station</text>
+			</navigator>
+		</view>
+		<view>
+			<text class="train_type" id="express">快车</text>
+			<navigator delta="1">
+				<view class="line">
+					<view class="cn">
+						<text>小金口——番禺</text>
+					</view>
+					<view class="en">
+						<text>Xiaojinkou Railway Station towards Panyu Railway Station</text>
+					</view>
 				</view>
-			</view>
-		</navigator>
+			</navigator>
+			<navigator delta="1">
+				<view class="line">
+					<view class="cn">
+						<text>小金口——佛山西</text>
+					</view>
+					<view class="en">
+						<text>Xiaojinkou Railway Station towards Foshanxi Railway Station</text>
+					</view>
+				</view>
+			</navigator>
+			<navigator url="/pages/guangzhou-zhaoqing-intercity/express/xiaojinkou-zhaoqing" delta="1">
+				<view class="line">
+					<view class="cn">
+						<text>小金口——肇庆</text>
+					</view>
+					<view class="en">
+						<text>Xiaojinkou Railway Station towards Zhaoqing Railway Station</text>
+					</view>
+				</view>
+			</navigator>
+		</view>
 	</view>
 </template>
 
@@ -35,6 +81,18 @@
 <style lang="scss" scoped>
 	navigator {
 		width: initial;
+	}
+.train_type{
+	display: block;
+	text-align: center;
+	margin: auto;
+	font-size: 2rem;
+}
+	#local {
+		color:red;
+	}
+	#express{
+		color: green;
 	}
 
 	.line {

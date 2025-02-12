@@ -110,6 +110,16 @@
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path" : "pages/guangzhou-zhaoqing-intercity/express/xiaojinkou-zhaoqing",
+			"style" : 
+			{
+				"navigationBarTitleText": "小金口——肇庆(快车)\nXiaojinkou towards Zhaoqing(Express)",
+				"navigationBarBackgroundColor": "#2a5aa6",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {
