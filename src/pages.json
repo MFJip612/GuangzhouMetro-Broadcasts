@@ -120,6 +120,16 @@
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path" : "pages/line4/line4",
+			"style" : 
+			{
+				"navigationBarTitleText" : "4号线\nLine 4",
+				"navigationBarBackgroundColor": "#00843D",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {

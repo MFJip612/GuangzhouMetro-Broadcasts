@@ -29,7 +29,7 @@
 					</view>
 				</view>
 			</navigator>
-			<navigator url="">
+			<navigator url="/pages/line4/line4">
 				<view class="line line-4">
 					<text class="num">4</text>
 					<view class="col">
