@@ -130,6 +130,13 @@
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path" : "pages/test",
+			"style" : 
+			{
+				"navigationBarTitleText" : "测试页\nTest Page"
+			}
 		}
 	],
 	"globalStyle": {
