@@ -97,11 +97,12 @@
             "enable" : false
         }
     },
-    "vueVersion" : "3",
+    "vueVersion" : "2",
     "locale" : "auto",
     "h5" : {
         "router" : {
-            "mode" : "hash"
+            "base" : "",
+            "mode" : "history"
         },
         "title" : "广州地铁报站模拟器",
         "optimization" : {

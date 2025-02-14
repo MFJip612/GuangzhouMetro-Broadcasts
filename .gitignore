@@ -596,3 +596,4 @@ npm-debug.log
 yarn-error.log
 
 /public/demo.html
+*.bak
