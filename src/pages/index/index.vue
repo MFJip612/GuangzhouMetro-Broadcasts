@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<uni-notice-bar show-icon scrollable single
-			text="欢迎投稿更多线路!"></uni-notice-bar>
+			text="欢迎投稿更多线路! 本网站目前有1,2,3号线的线路报站,敬请期待其他线路! "></uni-notice-bar>
 		<image src="/static/images/Guangzhou_Metro_logo.svg" style="width: 100%;height: 80rpx;"></image>
 		<view class="choose">
 			<navigator url="/pages/line1/line1">
