@@ -4,6 +4,8 @@
 .hbuilderx
 unpackage/
 /src/compoments/resource.json
+/public/demo.html
+*.bak
 
 ### VisualStudioCode template
 .vscode/*
@@ -334,7 +336,7 @@ AutoTest.Net/
 .sass-cache/
 
 # Installshield output folder
-[Ee]xpress/
+# [Ee]xpress/
 
 # DocProject is a documentation generator add-in
 DocProject/buildhelp/
@@ -595,5 +597,3 @@ dist/
 npm-debug.log
 yarn-error.log
 
-/public/demo.html
-*.bak
