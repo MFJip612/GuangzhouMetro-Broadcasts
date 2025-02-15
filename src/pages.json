@@ -112,9 +112,8 @@
 			}
 		},
 		{
-			"path" : "pages/guangzhou-zhaoqing-intercity/express/xiaojinkou-zhaoqing",
-			"style" : 
-			{
+			"path": "pages/guangzhou-zhaoqing-intercity/express/xiaojinkou-zhaoqing",
+			"style": {
 				"navigationBarTitleText": "小金口——肇庆(快车)\nXiaojinkou towards Zhaoqing(Express)",
 				"navigationBarBackgroundColor": "#2a5aa6",
 				"navigationBarTextStyle": "white",
@@ -122,20 +121,24 @@
 			}
 		},
 		{
-			"path" : "pages/line4/line4",
-			"style" : 
-			{
-				"navigationBarTitleText" : "4号线\nLine 4",
+			"path": "pages/line4/line4",
+			"style": {
+				"navigationBarTitleText": "4号线\nLine 4",
 				"navigationBarBackgroundColor": "#00843D",
 				"navigationBarTextStyle": "white",
 				"enablePullDownRefresh": false
 			}
 		},
 		{
-			"path" : "pages/test",
-			"style" : 
-			{
-				"navigationBarTitleText" : "测试页\nTest Page"
+			"path": "pages/test",
+			"style": {
+				"navigationBarTitleText": "测试页\nTest Page"
+			}
+		},
+		{
+			"path": "pages/file-list",
+			"style": {
+				"navigationBarTitleText": "广播文件列表及链接\nFile and Link"
 			}
 		}
 	],

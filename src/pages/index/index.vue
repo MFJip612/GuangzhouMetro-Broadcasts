@@ -1,5 +1,7 @@
 <template>
 	<view class="content">
+		<uni-notice-bar show-icon scrollable single
+			text="欢迎投稿更多线路!"></uni-notice-bar>
 		<image src="/static/images/Guangzhou_Metro_logo.svg" style="width: 100%;height: 80rpx;"></image>
 		<view class="choose">
 			<navigator url="/pages/line1/line1">
@@ -160,6 +162,9 @@
 				提供文件服务</text>
 			<text class="title">由 <uni-link href="https://space.bilibili.com/9033373/" text="@红茶w">@红茶w</uni-link>
 				提供报站资源</text>
+			<text class="title">
+				<navigator url="/pages/file-list">广播文件</navigator>
+			</text>
 		</view>
 	</view>
 </template>
