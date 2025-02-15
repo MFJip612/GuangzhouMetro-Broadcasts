@@ -10,11 +10,12 @@
 						</view>
 					</template>
 					<template v-else>
-						<text>
+						<text v-show="isViewName">
 							<uni-link class="file-link" :href="item['@microsoft.graph.downloadUrl']"
 								target="_blank">📄{{ item.name }}</uni-link>
 						</text>
-						<audio :src="item['@microsoft.graph.downloadUrl']" :name="item.name" controls></audio>
+						<audio v-show="!isViewName" :src="item['@microsoft.graph.downloadUrl']" :name="item.name"
+							controls></audio>
 					</template>
 				</li>
 			</ul>
@@ -34,7 +35,8 @@
 		data() {
 			return {
 				accessToken: null,
-				localContents: [] // 使用 localContents 而不是直接修改 props
+				localContents: [], // 使用 localContents 而不是直接修改 props
+				isViewName: true
 			};
 		},
 		async mounted() {
@@ -50,6 +52,9 @@
 			}
 		},
 		methods: {
+			change() {
+				this.isViewName = !this.isViewName;
+			},
 			async getAccessToken() {
 				try {
 					const response = await fetch('https://api.broadcast.mfjip.site/getAccessToken', {
