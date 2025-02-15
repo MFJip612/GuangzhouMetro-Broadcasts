@@ -102,7 +102,7 @@
     "h5" : {
         "router" : {
             "base" : "",
-            "mode" : "history"
+            "mode" : "hash"
         },
         "title" : "广州地铁报站模拟器",
         "optimization" : {
