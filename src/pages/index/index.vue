@@ -32,7 +32,7 @@
 				</view>
 			</navigator>
 			<navigator url="/pages/line4/line4">
-				<view class="line line-4">
+				<view class="line line-4 disable">
 					<text class="num">4</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -50,7 +50,7 @@
 				</view>
 			</navigator>
 			<navigator url="/pages/line6/line6">
-				<view class="line line-6">
+				<view class="line line-6 disable">
 					<text class="num">6</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -58,7 +58,7 @@
 					</view>
 				</view>
 			</navigator>
-			<view class="line line-7">
+			<view class="line line-7 disable">
 				<text class="num">7</text>
 				<view class="col">
 					<text class="cn">号线</text>
@@ -66,7 +66,7 @@
 				</view>
 			</view>
 			<navigator url="/pages/line8/line8">
-				<view class="line line-8">
+				<view class="line line-8 disable">
 					<text class="num">8</text>
 					<view class="col">
 						<text class="cn">号线</text>
@@ -74,79 +74,110 @@
 					</view>
 				</view>
 			</navigator>
-			<!--<view class="line line-9 color-black">
-				<text class="num">9</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 9</text>
+			<navigator>
+				<view class="line line-9 color-black disable">
+					<text class="num">9</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 9</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-13">
-				<text class="num">13</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 13</text>
+			</navigator>
+			<navigator url="">
+				<view class="line line-11 color-black disable">
+					<text class="num">11</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 11</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-14">
-				<text class="num">14</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 14</text>
+			</navigator>
+			<navigator>
+				<view class="line line-13 disable">
+					<text class="num">13</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 13</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-18">
-				<text class="num">18</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 18</text>
+			</navigator>
+			<navigator>
+				<view class="line line-14 disable">
+					<text class="num">14</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 14</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-21">
-				<text class="num">21</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 21</text>
+			</navigator>
+			<navigator>
+				<view class="line line-18 disable">
+					<text class="num">18</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 18</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-22">
-				<text class="num">22</text>
-				<view class="col">
-					<text class="cn">号线</text>
-					<text class="en">Line 22</text>
+			</navigator>
+			<navigator>
+				<view class="line line-21 disable">
+					<text class="num">21</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 21</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-gf">
-				<view class="col">
-					<text class="cn">广佛线</text>
-					<text class="en">Guangfo Line</text>
+			</navigator>
+			<navigator>
+				<view class="line line-22 disable">
+					<text class="num">22</text>
+					<view class="col">
+						<text class="cn">号线</text>
+						<text class="en">Line 22</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-apm">
-				<text class="num">APM</text>
-				<view class="col">
-					<text class="cn">线</text>
-					<text class="en">Line</text>
+			</navigator>
+			<navigator>
+				<view class="line line-gf disable">
+					<view class="col">
+						<text class="cn">广佛线</text>
+						<text class="en">Guangfo Line</text>
+					</view>
 				</view>
-			</view> -->
-			<view class="line line-intercity guangqing">
-				<view class="col">
-					<text class="cn">广清城际</text>
-					<text class="en">Guangzhou-Qingyuan Intercity</text>
+			</navigator>
+			<navigator>
+				<view class="line line-apm disable">
+					<text class="num">APM</text>
+					<view class="col">
+						<text class="cn">线</text>
+						<text class="en">Line</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-intercity donghuan">
-				<view class="col">
-					<text class="cn">广州东环城际</text>
-					<text class="en">Guangzhou East Ring Intercity</text>
+			</navigator>
+			<navigator>
+				<view class="line line-intercity guangqing disable">
+					<view class="col">
+						<text class="cn">广清城际</text>
+						<text class="en">Guangzhou-Qingyuan Intercity</text>
+					</view>
 				</view>
-			</view>
-			<view class="line line-intercity">
-				<view class="col">
-					<text class="cn">广惠城际</text>
-					<text class="en">Guangzhou-Huizhou Intercity</text>
+			</navigator>
+			<navigator>
+				<view class="line line-intercity donghuan disable">
+					<view class="col">
+						<text class="cn">广州东环城际</text>
+						<text class="en">Guangzhou East Ring Intercity</text>
+					</view>
 				</view>
-			</view>
+			</navigator>
+			<navigator>
+				<view class="line line-intercity disable">
+					<view class="col">
+						<text class="cn">广惠城际</text>
+						<text class="en">Guangzhou-Huizhou Intercity</text>
+					</view>
+				</view>
+			</navigator>
 			<navigator url="/pages/guangzhou-zhaoqing-intercity/guangzhou-zhaoqing-intercity">
 				<view class="line line-intercity">
 					<view class="col">
@@ -187,7 +218,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	navigator {
 		width: initial;
 	}
@@ -301,6 +332,10 @@
 		background-color: #71CC98;
 	}
 
+	.line-11 {
+		background-color: #ffb00a;
+	}
+
 	.line-13 {
 		color: #FFF;
 		background-color: #8E8C13;
@@ -368,5 +403,10 @@
 				font-size: 1.1rem;
 			}
 		}
+	}
+
+	.disable {
+		color: #FFF;
+		background-color: gray;
 	}
 </style>

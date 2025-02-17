@@ -140,6 +140,20 @@
 			"style": {
 				"navigationBarTitleText": "广播文件列表及链接\nFile and Link"
 			}
+		},
+		{
+			"path" : "pages/line5/line5",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/line6/line6",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {
