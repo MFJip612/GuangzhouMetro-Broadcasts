@@ -1,8 +1,8 @@
 <template>
 	<view class="content">
-		<uni-notice-bar show-icon scrollable single
-			text="欢迎投稿更多线路! 本网站目前有1,2,3号线的线路报站,敬请期待其他线路! "></uni-notice-bar>
-		<image src="/static/images/Guangzhou_Metro_logo.svg" style="width: 100%;height: 80rpx;"></image>
+		<uni-notice-bar show-icon scrollable single text="欢迎投稿更多线路! 本网站目前有1,2,3号线的线路报站,敬请期待其他线路! "></uni-notice-bar>
+		<image src="/static/images/Guangzhou_Metro_logo.svg" style="width: 100%;height: 80rpx;" mode="aspectFit">
+		</image>
 		<view class="choose">
 			<navigator url="/pages/line1/line1">
 				<view class="line line-1 color-black">
@@ -165,6 +165,9 @@
 			<text class="title">
 				<navigator url="/pages/file-list">广播文件</navigator>
 			</text>
+			<text class="title"><uni-link href="https://forms.office.com/r/15t2jNb82h">
+					<image src="/static/images/QRCode.png" mode="aspectFit"></image>
+				</uni-link></text>
 		</view>
 	</view>
 </template>
