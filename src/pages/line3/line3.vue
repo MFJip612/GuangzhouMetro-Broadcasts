@@ -14,42 +14,42 @@
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
+export default {
+	data() {
+		return {
 
-			};
-		}
+		};
 	}
+}
 </script>
 
-<style lang="scss">
-	navigator {
-		width: initial;
+<style lang="scss" scoped>
+navigator {
+	width: initial;
+}
+
+.line {
+	margin: 50rpx auto;
+	padding: 10rpx;
+	width: max-content;
+	color: #fff;
+	background-color: #ECA154;
+	border-radius: 20rpx;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	.cn {
+		font-family: '黑体';
+		font-size: 2rem;
 	}
 
-	.line {
-		margin: 50rpx auto;
-		padding: 10rpx;
-		width: max-content;
-		color: #fff;
-		background-color: #ECA154;
-		border-radius: 20rpx;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-
-		.cn {
-			font-family: '黑体';
-			font-size: 2rem;
-		}
-
-		.en {
-			font-family: 'Arial';
-			font-size: 1.2rem;
-		}
+	.en {
+		font-family: 'Arial';
+		font-size: 1.2rem;
 	}
+}
 </style>
