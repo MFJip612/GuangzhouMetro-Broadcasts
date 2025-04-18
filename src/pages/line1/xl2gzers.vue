@@ -6,7 +6,9 @@
 			<view>{{ item.subtitle }} Station</view>
 			<view class="btnGroup">
 				<button type="default" @click="PlaySound(item.src)">报站</button>
-				<button class="stop-play" type="default" @click="stopPlay()">停止播放</button>
+				<button class="stop-play" type="default" @click="stopPlay()">
+					停止播放
+				</button>
 			</view>
 		</uni-group>
 	</view>
@@ -18,7 +20,7 @@
 			return {
 				isPhone: false,
 				innerAudioContext: null,
-				stationRes: [] // 初始化stationRes为一个空数组
+				stationRes: [], // 初始化stationRes为一个空数组
 			};
 		},
 		onUnload() {
@@ -36,7 +38,8 @@
 			async getStationRes() {
 				try {
 					const response = await fetch(
-						"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/resource.json");
+						"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/resource.json"
+					);
 					if (!response.ok) {
 						throw new Error(`HTTP error! Status: ${response.status}`);
 					}
@@ -45,39 +48,116 @@
 						stationRes
 					} = data;
 					const keywords = ["GuangzhouEastRailwayStation", "XilangStart"];
-					this.stationRes = stationRes.filter(station =>
-						keywords.some(keyword => station.destination.includes(keyword))
+					this.stationRes = stationRes.filter((station) =>
+						keywords.some((keyword) => station.destination.includes(keyword))
 					);
 				} catch (error) {
-					console.error('Failed to fetch or filter station resources:', error);
+					console.error("Failed to fetch or filter station resources:", error);
 				}
 			},
-			PlaySound(src) {
-				if (this.innerAudioContext.onPlay) {
+			onUnload() {
+
+				if (this.innerAudioContext) {
+
 					this.innerAudioContext.pause();
+
 					this.innerAudioContext.destroy();
+
+					this.innerAudioContext = null;
+
 				}
-				this.innerAudioContext.src = src;
-				if (this.innerAudioContext.onCanplay) {
-					this.innerAudioContext.play();
-				}
+
 			},
-			stopPlay() {
-				this.innerAudioContext.pause();
-			}
-		}
-	}
+
+			onLoad() {
+
+				// 初始化 innerAudioContext
+
+				this.innerAudioContext = uni.createInnerAudioContext();
+
+				// 获取站点资源
+
+				this.getStationRes();
+
+			},
+
+			methods: {
+
+				async getStationRes() {
+
+					try {
+
+						const response = await fetch(
+
+							"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/resource.json"
+
+						);
+
+						if (!response.ok) {
+
+							throw new Error(`HTTP error! Status: ${response.status}`);
+
+						}
+
+						const data = await response.json();
+
+						const {
+							stationRes
+						} = data;
+
+						const keywords = ["GuangzhouEastRailwayStation", "XilangStart"];
+
+						this.stationRes = stationRes.filter((station) =>
+
+							keywords.some((keyword) => station.destination.includes(keyword))
+
+						);
+
+					} catch (error) {
+
+						console.error("Failed to fetch or filter station resources:", error);
+
+					}
+
+				},
+
+				PlaySound(src) {
+
+					if (!this.innerAudioContext) return;
+
+					this.innerAudioContext.pause();
+
+					this.innerAudioContext.src = src;
+
+					this.innerAudioContext.play();
+
+				},
+
+				stopPlay() {
+
+					if (this.innerAudioContext) {
+
+						this.innerAudioContext.pause();
+
+					}
+
+				},
+
+			},
+
+
+		},
+	};
 </script>
 
 <style>
 	.stations {
 		color: #fff;
-		background-color: #F3D03E;
+		background-color: #f3d03e;
 	}
 
 	/* 一般认为宽度大于等于768px的设备为平板 */
 	@media screen and (min-width: 768px) {
-
 		/* 平板样式 */
 	}
 

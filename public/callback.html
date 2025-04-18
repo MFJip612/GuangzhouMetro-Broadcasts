@@ -1,13 +1,18 @@
 <!DOCTYPE html>
+
 <html>
-	<head>
-		<title>Auth Callback</title>
-		<script>
-			window.opener.postMessage(window.location.hash, '*');
-			window.close();
-		</script>
-	</head>
-	<body>
-		<p>正在验证，请稍候...</p>
-	</body>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Auth Callback</title>
+	<script>
+		window.opener.postMessage(window.location.hash, '*');
+		window.close();
+	</script>
+</head>
+
+<body>
+	<p>正在验证，请稍候...</p>
+</body>
+
 </html>
