@@ -112,12 +112,21 @@
 			}
 		},
 		{
-			"path": "pages/station-list"
+			"path": "pages/station-list",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "广州地铁报站器(地铁)\nMetro",
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"backgroundColor": "#F8F8F8"
+			}
 		},
 		{
 			"path": "pages/station-list-intercity",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "广州地铁报站器(城际)\nIntercity",
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"backgroundColor": "#F8F8F8"
 			}
 		}
 	],
