@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<navigator url="/pages/staation-list?line=3b4&towards=apn2pys&key1=AirportNToPanyuSquare&key2=AirportNStart"
+		<navigator url="/pages/station-list?line=3b4&towards=apn2pys&key1=AirportNToPanyuSquare&key2=AirportNStart"
 			delta="1">
 			<view class="line">
 				<view class="cn">
