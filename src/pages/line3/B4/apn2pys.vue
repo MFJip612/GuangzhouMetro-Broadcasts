@@ -1,18 +1,19 @@
 <template>
 	<view>
-		<uni-group v-for="(item, index) in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`" top="20"
-			mode="card" class="station">
-			<view class="station-content">
-				<view>{{ item.title }} 站</view>
-				<view>{{ item.subtitle }} Station</view>
-				<view class="btnGroup">
-					<button @click="playSound(item.src)">报站</button>
-					<button class="stop-play" @click="stopPlay()">停止播放</button>
+		<uni-section type="line">
+			<uni-group v-for="(item, index) in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`"
+				class="station" mode="card">
+				<view class="station-content">
+					<view>{{ item.title }} 站</view>
+					<view>{{ item.subtitle }} Station</view>
+					<view class="btnGroup">
+						<button @click="playSound(item.src)">报站</button>
+						<button class="stop-play" @click="stopPlay()">停止播放</button>
+					</view>
 				</view>
-			</view>
-			<!-- 分隔线 -->
-			<view v-if="index < stationRes.length - 1" class="divider"></view>
-		</uni-group>
+				<!-- 分隔线 -->
+				<!-- <view v-if="index < stationRes.length - 1" class="divider"></view> -->
+			</uni-group></uni-section>
 	</view>
 </template>
 
@@ -104,15 +105,18 @@ export default {
 .station-content {
 	display: flex;
 	flex-direction: column;
-	align-items: center; /* 水平居中 */
-	justify-content: center; /* 垂直居中 */
+	align-items: center;
+	/* 水平居中 */
+	justify-content: center;
+	/* 垂直居中 */
 	text-align: center;
 }
 
 .btnGroup {
 	display: flex;
 	justify-content: center;
-	gap: 10px; /* 按钮之间的间距 */
+	gap: 10px;
+	/* 按钮之间的间距 */
 	margin-top: 10px;
 }
 
