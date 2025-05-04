@@ -2,11 +2,13 @@
 	<view>
 		<uni-group v-for="item in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`" top="20"
 			mode="card" class="station">
-			<view>{{ item.title }} 站</view>
-			<view>{{ item.subtitle }} Station</view>
-			<view class="btnGroup">
-				<button @click="playSound(item.src)">报站</button>
-				<button class="stop-play" @click="stopPlay()">停止播放</button>
+			<view class="station-content">
+				<view>{{ item.title }} 站</view>
+				<view>{{ item.subtitle }} Station</view>
+				<view class="btnGroup">
+					<button @click="playSound(item.src)">报站</button>
+					<button class="stop-play" @click="stopPlay()">停止播放</button>
+				</view>
 			</view>
 		</uni-group>
 	</view>
@@ -97,19 +99,26 @@ export default {
 	/* 手机样式 */
 }
 
+.station-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* 水平居中 */
+	justify-content: center; /* 垂直居中 */
+	text-align: center;
+}
+
 .btnGroup {
 	display: flex;
 	justify-content: center;
+	gap: 10px; /* 按钮之间的间距 */
+	margin-top: 10px;
 }
 
 button {
 	width: 200rpx;
 	display: flex;
 	justify-content: center;
-}
-
-.btn-d {
-	display: flex;
+	align-items: center;
 }
 
 .station {
