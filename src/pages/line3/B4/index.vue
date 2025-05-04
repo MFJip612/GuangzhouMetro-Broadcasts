@@ -1,6 +1,7 @@
 <template>
 	<view>
-		<navigator url="/pages/line3/B4/apn2pys" delta="1">
+		<navigator url="/pages/staation-list?line=3b4&towards=apn2pys&key1=AirportNToPanyuSquare&key2=AirportNStart"
+			delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>机场北——番禺广场</text>
