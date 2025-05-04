@@ -1,21 +1,19 @@
 <template>
 	<view>
-		<uni-section type="line">
-			<uni-group v-for="(item, index) in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`"
-				class="station" mode="card">
-				<view class="station-content">
-					<!-- 判断是否需要添加“站” -->
-					<view>{{ item.title.endsWith('站') ? item.title : `${item.title} 站` }}</view>
-					<!-- 判断是否需要添加“Station” -->
-					<view>{{ item.subtitle.endsWith('Railway Station') ? item.subtitle : `${item.subtitle} Station` }}
-					</view>
-					<view class="btnGroup">
-						<button @click="playSound(item.src)">报站</button>
-						<button class="stop-play" @click="stopPlay()">停止播放</button>
-					</view>
+		<uni-group v-for="(item, index) in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`"
+			class="station" mode="card">
+			<view class="station-content">
+				<!-- 判断是否需要添加“站” -->
+				<view>{{ item.title.endsWith('站') ? item.title : `${item.title} 站` }}</view>
+				<!-- 判断是否需要添加“Station” -->
+				<view>{{ item.subtitle.endsWith('Railway Station') ? item.subtitle : `${item.subtitle} Station` }}
 				</view>
-			</uni-group>
-		</uni-section>
+				<view class="btnGroup">
+					<button @click="playSound(item.src)">报站</button>
+					<button class="stop-play" @click="stopPlay()">停止播放</button>
+				</view>
+			</view>
+		</uni-group>
 	</view>
 </template>
 

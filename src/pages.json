@@ -148,6 +148,13 @@
 		},
 		{
 			"path" : "pages/station-list"
+		},
+		{
+			"path" : "pages/station-list-intercity",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {
