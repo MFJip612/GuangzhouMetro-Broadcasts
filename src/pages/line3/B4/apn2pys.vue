@@ -5,62 +5,81 @@
 			<view>{{ item.title }} 站</view>
 			<view>{{ item.subtitle }} Station</view>
 			<view class="btnGroup">
-				<button @click="PlaySound(item.src)">报站</button>
+				<button @click="playSound(item.src)">报站</button>
 				<button class="stop-play" @click="stopPlay()">停止播放</button>
 			</view>
 		</uni-group>
 	</view>
 </template>
+
 <script>
+import { ref, onMounted, onUnmounted } from 'vue';
+
 export default {
-	data() {
-		return {
-			isPhone: false,
-			innerAudioContext: null,
-			stationRes: [] // 初始化 stationRes 为一个空数组
-		};
-	},
-	onUnload() {
-		this.innerAudioContext.pause();
-		this.innerAudioContext.destroy();
-	},
-	onLoad() {
-		// 初始化 innerAudioContext
-		this.innerAudioContext = uni.createInnerAudioContext();
+	name: 'Apn2Pys',
+	setup() {
+		const isPhone = ref(false);
+		const innerAudioContext = ref(null);
+		const stationRes = ref([]);
+
 		// 获取站点资源
-		this.getStationRes();
-	},
-	methods: {
-		async getStationRes() {
+		const getStationRes = async () => {
 			try {
 				const response = await fetch(
-					"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/res2.json");
+					'https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/res2.json'
+				);
 				if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
 				const data = await response.json();
-				const keywords = ["AirportNToPanyuSquare", "AirportNStart"];
-				this.stationRes = data.stationRes.filter(station =>
-					keywords.some(keyword => station.destination.includes(keyword))
+				const keywords = ['AirportNToPanyuSquare', 'AirportNStart'];
+				stationRes.value = data.stationRes.filter((station) =>
+					keywords.some((keyword) => station.destination.includes(keyword))
 				);
 			} catch (error) {
 				console.error('Error fetching station resources:', error);
 			}
-		},
-		PlaySound(src) {
-			if (this.innerAudioContext) {
-				this.innerAudioContext.pause();
-				this.innerAudioContext.src = src;
-				this.innerAudioContext.play();
+		};
+
+		// 播放音频
+		const playSound = (src) => {
+			if (innerAudioContext.value) {
+				innerAudioContext.value.pause();
+				innerAudioContext.value.src = src;
+				innerAudioContext.value.play();
 			}
-		},
-		stopPlay() {
-			if (this.innerAudioContext) {
-				this.innerAudioContext.pause();
+		};
+
+		// 停止播放
+		const stopPlay = () => {
+			if (innerAudioContext.value) {
+				innerAudioContext.value.pause();
 			}
-		}
-	}
-}
+		};
+
+		// 初始化音频上下文
+		onMounted(() => {
+			innerAudioContext.value = uni.createInnerAudioContext();
+			getStationRes();
+		});
+
+		// 销毁音频上下文
+		onUnmounted(() => {
+			if (innerAudioContext.value) {
+				innerAudioContext.value.pause();
+				innerAudioContext.value.destroy();
+			}
+		});
+
+		return {
+			isPhone,
+			stationRes,
+			playSound,
+			stopPlay,
+		};
+	},
+};
 </script>
+
 <style>
 .stations {
 	color: #fff;
