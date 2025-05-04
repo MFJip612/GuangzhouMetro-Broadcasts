@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<navigator url="/pages/station-list?line=1&to=gzers&key1=GuangzhouEastRailwayStation&key2=XilangStart"
+		<navigator url="/pages/station-list?line=1&towards=gzers&key1=GuangzhouEastRailwayStation&key2=XilangStart"
 			delta="1">
 			<view class="line">
 				<view class="cn">
