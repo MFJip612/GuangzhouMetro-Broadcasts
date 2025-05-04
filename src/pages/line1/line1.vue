@@ -1,6 +1,7 @@
 <template>
 	<view>
-		<navigator url="/pages/line1/xl2gzers" delta="1">
+		<navigator url="/pages/station-list?line=1&to=gzers&key1=GuangzhouEastRailwayStation&key2=XilangStart"
+			delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>西塱——广州东站</text>
@@ -23,40 +24,43 @@
 	</view>
 </template>
 <script>
-	export default {
-		data() {
-			return {
-
-			}
-		},
-		methods: {
+export default {
+	data() {
+		return {
 
 		}
+	},
+	methods: {
+
 	}
+}
 </script>
 <style>
-	navigator {
-		width: initial;
+navigator {
+	width: initial;
+}
+
+.line {
+	margin: 50rpx auto;
+	padding: 10rpx;
+	width: max-content;
+	background-color: #F3D03E;
+	border-radius: 20rpx;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	.cn {
+		font-family: '黑体';
+		font-size: 2rem;
 	}
-	.line {
-		margin: 50rpx auto;
-		padding: 10rpx;
-		width: max-content;
-		background-color: #F3D03E;
-		border-radius: 20rpx;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		.cn {
-			font-family: '黑体';
-			font-size: 2rem;
-		}
-		.en {
-			font-family: 'Arial';
-			font-size: 1.2rem;
-		}
+
+	.en {
+		font-family: 'Arial';
+		font-size: 1.2rem;
 	}
+}
 </style>
