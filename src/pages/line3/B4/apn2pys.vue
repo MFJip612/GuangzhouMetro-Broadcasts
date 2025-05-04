@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<uni-group v-for="item in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`" top="20"
+		<uni-group v-for="(item, index) in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`" top="20"
 			mode="card" class="station">
 			<view class="station-content">
 				<view>{{ item.title }} 站</view>
@@ -10,6 +10,8 @@
 					<button class="stop-play" @click="stopPlay()">停止播放</button>
 				</view>
 			</view>
+			<!-- 分隔线 -->
+			<view v-if="index < stationRes.length - 1" class="divider"></view>
 		</uni-group>
 	</view>
 </template>
@@ -123,5 +125,14 @@ button {
 
 .station {
 	width: auto;
+}
+
+/* 分隔线样式 */
+.divider {
+	height: 1px;
+	background-color: #ccc;
+	margin: 20px 0;
+	width: 90%;
+	align-self: center;
 }
 </style>
