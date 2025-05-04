@@ -4,16 +4,18 @@
 			<uni-group v-for="(item, index) in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`"
 				class="station" mode="card">
 				<view class="station-content">
-					<view>{{ item.title }} 站</view>
-					<view>{{ item.subtitle }} Station</view>
+					<!-- 判断是否需要添加“站” -->
+					<view>{{ item.title.endsWith('站') ? item.title : `${item.title} 站` }}</view>
+					<!-- 判断是否需要添加“Station” -->
+					<view>{{ item.subtitle.endsWith('Railway Station') ? item.subtitle : `${item.subtitle} Station` }}
+					</view>
 					<view class="btnGroup">
 						<button @click="playSound(item.src)">报站</button>
 						<button class="stop-play" @click="stopPlay()">停止播放</button>
 					</view>
 				</view>
-				<!-- 分隔线 -->
-				<!-- <view v-if="index < stationRes.length - 1" class="divider"></view> -->
-			</uni-group></uni-section>
+			</uni-group>
+		</uni-section>
 	</view>
 </template>
 
@@ -129,14 +131,5 @@ button {
 
 .station {
 	width: auto;
-}
-
-/* 分隔线样式 */
-.divider {
-	height: 1px;
-	background-color: #ccc;
-	margin: 20px 0;
-	width: 90%;
-	align-self: center;
 }
 </style>
