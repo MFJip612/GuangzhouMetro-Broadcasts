@@ -10,7 +10,7 @@
 				</view>
 			</view>
 		</navigator> -->
-		<navigator url="/pages/station-list?line=2&towards=gzsrs&key1=GuangzhouSoundRailwayStation&key2=JiahewanggangStart" delta="1">
+		<navigator url="/pages/station-list?line=2&towards=gzsrs&key1=GuangzhouSouthRailwayStation&key2=JiahewanggangStart" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>嘉禾望岗——广州南站</text>
