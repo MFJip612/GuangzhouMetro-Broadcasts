@@ -390,7 +390,7 @@ navigator {
   width: 20rem;
   height: 4.5834rem;
   color: #FFF;
-  background-color: rgb(42, 90, 166);
+  background-color: #2a5aa6;
   border-radius: 10rpx;
 
   .col {

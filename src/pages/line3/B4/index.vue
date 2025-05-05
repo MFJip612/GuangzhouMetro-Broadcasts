@@ -11,7 +11,7 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/line3/B4/apn2hb" delta="1">
+		<navigator url="/pages/station-list?line=3b4&towards=apn2hb&key1=AirportNToHaibang&key2=HaibangStart" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>机场北——海傍</text>
