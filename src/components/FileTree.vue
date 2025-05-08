@@ -21,7 +21,7 @@
                 </template>
             </li>
         </ul>
-        <view v-else>
+        <view v-else id="loading" class="loading">
             <text>加载中...</text>
         </view>
     </view>
@@ -65,11 +65,13 @@ const toggleFolder = (item) => {
 
 ul {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 40rpx;
+    /* 修改为 rpx 单位 */
 }
 
 li {
-    margin: 5px 0;
+    margin: 10rpx 0;
+    /* 修改为 rpx 单位 */
 }
 
 .folder-toggle {
@@ -78,15 +80,32 @@ li {
 }
 
 .sub-folder {
-    padding-left: 20px;
+    padding-left: 40rpx;
+    /* 修改为 rpx 单位 */
 }
 
-.folder-enter-active, .folder-leave-active {
+.folder-enter-active,
+.folder-leave-active {
     transition: all 0.3s ease;
 }
 
-.folder-enter-from, .folder-leave-to {
+.folder-enter-from,
+.folder-leave-to {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-20rpx);
+    /* 修改为 rpx 单位 */
+}
+
+/* 新增样式：让“加载中...”居中 */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 保持为视口高度 */
+    text-align: center;
+    font-size: 32rpx;
+    /* 修改为 rpx 单位 */
+    color: #666;
 }
 </style>
