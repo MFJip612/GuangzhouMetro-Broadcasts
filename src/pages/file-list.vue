@@ -7,14 +7,16 @@
 						<text @click="toggleFolder(item)" class="folder-toggle">
 							{{ item.isExpanded ? '▼' : '▶' }} 📁 {{ item.name }}
 						</text>
-						<view v-show="item.isExpanded" class="sub-folder">
-							<FileTree :contents="item.children" />
-						</view>
+						<transition name="folder">
+							<view v-show="item.isExpanded" class="sub-folder">
+								<FileTree :contents="item.children" />
+							</view>
+						</transition>
 					</template>
 					<template v-else>
 						<text v-show="isViewName">
 							<uni-link class="file-link" :href="item['@microsoft.graph.downloadUrl']" target="_blank">
-								📄 {{ item.name }}
+								 📄 {{ item.name }}
 							</uni-link>
 						</text>
 					</template>
@@ -158,5 +160,14 @@ li {
 
 .sub-folder {
     padding-left: 20px;
+}
+
+.folder-enter-active, .folder-leave-active {
+    transition: all 0.3s ease;
+}
+
+.folder-enter-from, .folder-leave-to {
+    opacity: 0;
+    transform: translateY(-10px);
 }
 </style>
