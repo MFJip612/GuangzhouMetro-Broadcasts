@@ -1,5 +1,6 @@
 <template>
 	<view>
+        <uni-notice-bar show-icon scrollable single text="音频文件由 bilibili@红茶w 录制整理，未经许可严禁转载。" id="notice"></uni-notice-bar>
 		<view id="fileTree">
 			<ul v-if="localContents.length">
 				<li v-for="item in localContents" :key="item.id">
