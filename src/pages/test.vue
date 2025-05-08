@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import oneDrive from '@/compoments/onedrive.js';
+import oneDrive from '@/components/onedrive.js';
 
 export default {
 	data() {
