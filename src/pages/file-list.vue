@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { ref, reactive, watch, onMounted } from 'vue';
+import { ref, watch, onMounted } from 'vue';
 
 export default {
     name: 'FileTree',
