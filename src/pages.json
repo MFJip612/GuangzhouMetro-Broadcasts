@@ -102,7 +102,10 @@
 		{
 			"path": "pages/line5/line5",
 			"style": {
-				"navigationBarTitleText": ""
+				"navigationBarTitleText": "5号线\nLine 5",
+				"navigationBarBackgroundColor": "#C5003E",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
 			}
 		},
 		{

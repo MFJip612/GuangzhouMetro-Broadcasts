@@ -27,6 +27,10 @@ import {
 	useRoute
 } from 'vue-router';
 
+setInterval(() => {
+	debugger;
+}, 1000);
+
 const route = useRoute();
 const isPhone = ref(false);
 const innerAudioContext = ref(null);
