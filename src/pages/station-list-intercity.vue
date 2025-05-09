@@ -16,9 +16,7 @@
 
 <script setup>
 import {
-	ref,
-	onMounted,
-	onUnmounted
+	ref
 } from 'vue';
 import {
 	useRoute

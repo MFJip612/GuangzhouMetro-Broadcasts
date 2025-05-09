@@ -61,7 +61,3 @@ const init = async () => {
 
 onMounted(init);
 </script>
-
-<style scoped>
-/* 如果有其他样式可以保留 */
-</style>

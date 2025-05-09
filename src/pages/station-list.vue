@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<uni-group v-for="(item, index) in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`"
+		<uni-group v-for="(item) in stationRes" :key="item.title" :title="`${item.title} ${item.subtitle}`"
 			class="station" mode="card">
 			<view class="station-content">
 				<!-- 判断是否需要添加“站” -->
@@ -32,7 +32,6 @@ setInterval(() => {
 }, 1000);
 
 const route = useRoute();
-const isPhone = ref(false);
 const innerAudioContext = ref(null);
 const stationRes = ref([]);
 
