@@ -1,0 +1,142 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line1/line1",
+			"style": {
+				"navigationBarTitleText": "1号线\nLine 1",
+				"navigationBarBackgroundColor": "#F3D03E",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line2/line2",
+			"style": {
+				"navigationBarTitleText": "2号线\nLine 2",
+				"navigationBarBackgroundColor": "#00629B",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line3/line3",
+			"style": {
+				"navigationBarTitleText": "3号线\nLine 3",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line3/B4/index",
+			"style": {
+				"navigationBarTitleText": "B4",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line3/B4/apn2hb",
+			"style": {
+				"navigationBarTitleText": "机场北——海傍\nAirport N. towards Haibang",
+				"navigationBarBackgroundColor": "#ECA154",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/guangzhou-zhaoqing-intercity/guangzhou-zhaoqing-intercity",
+			"style": {
+				"navigationBarTitleText": "广肇城际\nGuangzhou-Zhaoqing Intercity",
+				"navigationBarBackgroundColor": "#2a5aa6",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/guangzhou-zhaoqing-intercity/xiaojinkou-zhaoqing",
+			"style": {
+				"navigationBarTitleText": "小金口——肇庆\nXiaojinkou towards Zhaoqing",
+				"navigationBarBackgroundColor": "#2a5aa6",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/guangzhou-zhaoqing-intercity/express/xiaojinkou-zhaoqing",
+			"style": {
+				"navigationBarTitleText": "小金口——肇庆(快车)\nXiaojinkou towards Zhaoqing(Express)",
+				"navigationBarBackgroundColor": "#2a5aa6",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line4/line4",
+			"style": {
+				"navigationBarTitleText": "4号线\nLine 4",
+				"navigationBarBackgroundColor": "#00843D",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/test",
+			"style": {
+				"navigationBarTitleText": "测试页\nTest Page"
+			}
+		},
+		{
+			"path": "pages/file-list",
+			"style": {
+				"navigationBarTitleText": "广播文件列表及链接\nFile and Link"
+			}
+		},
+		{
+			"path": "pages/line5/line5",
+			"style": {
+				"navigationBarTitleText": "5号线\nLine 5",
+				"navigationBarBackgroundColor": "#C5003E",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/line6/line6",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/station-list",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "广州地铁报站器(地铁)\nMetro",
+				"navigationBarBackgroundColor": "#F8F8F8",
+				"backgroundColor": "#F8F8F8"
+			}
+		},
+		{
+			"path": "pages/station-list-intercity",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "广州地铁报站器(城际)\nIntercity",
+				"navigationBarBackgroundColor": "#2a5aa6",
+				"backgroundColor": "#2a5aa6"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "广州地铁报站器",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
