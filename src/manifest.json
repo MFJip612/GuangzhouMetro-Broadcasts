@@ -37,7 +37,9 @@
                     "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
                     "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
                     "<uses-feature android:name=\"android.hardware.camera\"/>",
-                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_MEDIA_IMAGES\" />",
+                    "<uses-permission android:name=\"android.permission.READ_MEDIA_VIDEO\" />",
                 ]
             },
             /* ios打包配置 */
@@ -67,6 +69,11 @@
     },
     "uniStatistics": {
         "enable": false
+    },
+    "h5": {
+        "router": {
+            "mode": "history"
+        }
     },
     "vueVersion": "3"
 }
