@@ -103,8 +103,8 @@ onUnmounted(() => {
 .btnGroup {
 	display: flex;
 	justify-content: center;
-	gap: 10px;
-	margin-top: 10px;
+	gap: 20rpx;
+	margin-top: 20rpx;
 }
 
 button {
