@@ -131,6 +131,26 @@
 				"navigationBarBackgroundColor": "#2a5aa6",
 				"backgroundColor": "#2a5aa6"
 			}
+		},
+		{
+			"path" : "pages/line12/line12",
+			"style" : 
+			{
+				"navigationBarTitleText": "12号线\nLine 12",
+				"navigationBarBackgroundColor": "#59621D",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path" : "pages/line10/line10",
+			"style" : 
+			{
+				"navigationBarTitleText": "10号线\nLine 10",
+				"navigationBarBackgroundColor": "#7D9CC0",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {
