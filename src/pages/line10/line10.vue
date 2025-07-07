@@ -21,7 +21,7 @@
 			</view>
 		</navigator> -->
 	</view>
-	<Sign to_cn="广州体育馆" to_en="Guangzhou Gymnasium" via_cn="广州白云站" via_en="Guangzhou Baiyun Railway Station"/>
+	<!-- <Sign to_cn="广州体育馆" to_en="Guangzhou Gymnasium" via_cn="广州白云站" via_en="Guangzhou Baiyun Railway Station"/> -->
 </template>
 <script setup>
 	import Sign from "@/components/Sign.vue"
