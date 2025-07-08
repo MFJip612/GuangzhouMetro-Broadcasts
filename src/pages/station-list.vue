@@ -9,7 +9,7 @@
 				<view>{{ item.subtitle.endsWith('Railway Station') ? item.subtitle : `${item.subtitle} Station` }}
 				</view>
 				<view class="btnGroup">
-					<button @click="playSound(item.src)">报站</button>
+					<button @click="playSound(item.src)">播放</button>
 					<button class="stop-play" @click="stopPlay()">停止播放</button>
 				</view>
 			</view>
