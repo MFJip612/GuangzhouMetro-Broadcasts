@@ -207,8 +207,8 @@
 		</view>
 		<view class="text-area"
 			style="justify-content: center;display: flex;flex-direction: column;align-items: center;">
-			<text class="title">由 <uni-link href="https://blog.zhengxian.top/" text="@380AM-0204">@380AM-0204</uni-link>
-				提供文件服务</text>
+			<!-- <text class="title">由 <uni-link href="https://blog.zhengxian.top/" text="@380AM-0204">@380AM-0204</uni-link>
+				提供文件服务</text> -->
 			<text class="title">由 <uni-link href="https://space.bilibili.com/9033373/" text="@红茶w">@红茶w</uni-link>
 				提供报站资源</text>
 			<text class="title">
