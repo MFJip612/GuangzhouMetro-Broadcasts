@@ -3,7 +3,7 @@
 		<navigator url="/pages/station-list?line=10&towards=yje&key1=YangjiEast&key2=XilangStart" delta="1">
 			<view class="line">
 				<view class="cn">
-					<text>西朗——杨箕东</text>
+					<text>西塱——杨箕东</text>
 				</view>
 				<view class="en">
 					<text>Xilang towards Yangji East</text>
@@ -21,7 +21,7 @@
 			</view>
 		</navigator> -->
 	</view>
-	<!-- <Sign to_cn="广州体育馆" to_en="Guangzhou Gymnasium" via_cn="广州白云站" via_en="Guangzhou Baiyun Railway Station"/> -->
+	<!-- <Sign to_cn="南沙客运港" to_en="Nansha Passenger Port" via_cn="大学城南" via_en="Higher Education Mega Centre S."/> -->
 </template>
 <script setup>
 	import Sign from "@/components/Sign.vue"
