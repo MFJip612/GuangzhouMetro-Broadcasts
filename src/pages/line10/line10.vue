@@ -10,16 +10,16 @@
 				</view>
 			</view>
 		</navigator>
-		<!-- <navigator url="/pages/station-list?line=12&towards=hemcs&key1=HEMCS&key2=ErshaIslandStart" delta="1">
+		<navigator url="/pages/station-list?line=10&towards=xl&key1=Xilang&key2=YangjiEastStart" delta="1">
 			<view class="line">
 				<view class="cn">
-					<text>二沙岛——大学城南</text>
+					<text>杨箕东——西塱</text>
 				</view>
 				<view class="en">
-					<text>Ersha Island towards Higher Education Mega Centre S.</text>
+					<text>Yangji East towards Xilang</text>
 				</view>
 			</view>
-		</navigator> -->
+		</navigator>
 	</view>
 	<!-- <Sign to_cn="南沙客运港" to_en="Nansha Passenger Port" via_cn="大学城南" via_en="Higher Education Mega Centre S."/> -->
 </template>
