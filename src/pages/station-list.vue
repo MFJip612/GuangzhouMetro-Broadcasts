@@ -45,7 +45,7 @@ const getStationRes = async () => {
 		const destination = route.query.towards || 'apn2pys';
 
 		const response = await fetch(
-			`https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/${line}-${destination}.json`
+			`https://bcd.waterspo.top/${line}-${destination}.json`
 		);
 		if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
