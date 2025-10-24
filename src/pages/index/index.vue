@@ -195,6 +195,13 @@
 						<text class="en">Guangzhou-Huizhou Intercity</text>
 					</view>
 				</view>
+			</navigator><navigator>
+				<view class="line line-intercity disable">
+					<view class="col">
+						<text class="cn">琶莲城际</text>
+						<text class="en">Pazhou-Lianhuashan Intercity</text>
+					</view>
+				</view>
 			</navigator>
 			<navigator url="/pages/guangzhou-zhaoqing-intercity/guangzhou-zhaoqing-intercity">
 				<view class="line line-intercity">
@@ -260,6 +267,17 @@
 		flex-wrap: wrap;
 		justify-content: space-around;
 		// margin: 50rpx;
+		
+		/* 网页端适配 - 在大屏幕上使用更大的容器宽度 */
+		@media screen and (min-width: 768px) {
+			width: 100%;
+			max-width: 1200px;
+		}
+		
+		/* 网页端适配 - 在超大屏幕上增加间距 */
+		@media screen and (min-width: 1200px) {
+			padding: 0 20px;
+		}
 	}
 
 	.line {
@@ -414,7 +432,7 @@
 	}
 
 	.line-intercity {
-		width: 20rem;
+		min-width: 20rem;
 		height: 4.5834rem;
 		color: #FFF;
 		background-color: #2a5aa6;
@@ -434,5 +452,12 @@
 	.disable {
 		color: #FFF;
 		background-color: gray;
+	}
+	
+	/* 网页端适配 - 底部信息区域 */
+	@media screen and (min-width: 768px) {
+		.text-area {
+			margin-top: 20px;
+		}
 	}
 </style>
