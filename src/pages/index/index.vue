@@ -22,7 +22,7 @@
 					</view>
 				</view>
 			</navigator>
-			<navigator url="/pages/line3/line3">
+			<navigator url="/pages/line3/B4/index">
 				<view class="line line-3">
 					<text class="num">3</text>
 					<view class="col">
