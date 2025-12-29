@@ -9,14 +9,20 @@
             <view class="station-content">
                 <!-- 判断是否需要添加“站” -->
                 <view>{{
-                    item.title.endsWith("站") ? item.title : `${item.title} 站`
+                    line < 70
+                        ? item.title.endsWith("站")
+                            ? item.title
+                            : `${item.title} 站`
+                        : `${item.title} 站`
                 }}</view>
                 <!-- 判断是否需要添加“Station” -->
                 <view
                     >{{
-                        item.subtitle.endsWith("Railway Station")
-                            ? item.subtitle
-                            : `${item.subtitle} Station`
+                        line < 70
+                            ? item.subtitle.endsWith("Railway Station")
+                                ? item.subtitle
+                                : `${item.subtitle} Station`
+                            : `${item.subtitle} Railway Station`
                     }}
                 </view>
                 <view class="btnGroup">
