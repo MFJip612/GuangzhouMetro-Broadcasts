@@ -22,11 +22,14 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import { useRoute } from "vue-router";
 
+setInterval(() => {
+    debugger;
+}, 1000);
+
 const route = useRoute();
-const isPhone = ref(false);
 const innerAudioContext = ref(null);
 const stationRes = ref([]);
 
@@ -40,6 +43,7 @@ const getStationRes = async () => {
         const destination = route.query.towards || "2xjk";
         const isexpress = route.query.isexpress || "local";
 
+        // 修正 fetch 地址，与 station-list 统一域名
         const response = await fetch(
             `https://bcd.waterspo.top/intercity/${line}-${destination}-${isexpress}.json`
         );
@@ -55,6 +59,7 @@ const getStationRes = async () => {
         console.error("Error fetching station resources:", error);
     }
 };
+
 // 播放音频
 const playSound = (src) => {
     if (innerAudioContext.value) {
@@ -83,7 +88,34 @@ onUnmounted(() => {
         innerAudioContext.value.pause();
         innerAudioContext.value.destroy();
     }
+    innerAudioContext.value.destroy();
 });
 </script>
 
-<style></style>
+<style>
+.station-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: center;
+    gap: 20rpx;
+    margin-top: 20rpx;
+}
+
+button {
+    width: 200rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.station {
+    width: auto;
+}
+</style>
