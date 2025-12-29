@@ -146,8 +146,8 @@
 					</view>
 				</view>
 			</navigator>
-			<navigator>
-				<view class="line line-22 disable">
+			<navigator url="/pages/line22/line22">
+				<view class="line line-22">
 					<text class="num">22</text>
 					<view class="col">
 						<text class="cn">号线</text>
