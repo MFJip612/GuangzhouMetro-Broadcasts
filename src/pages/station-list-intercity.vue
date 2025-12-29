@@ -7,8 +7,18 @@
             class="station"
             mode="card">
             <view class="station-content">
-                <view>{{ item.title }} 站</view>
-                <view>{{ item.subtitle }} Railway Station</view>
+                <!-- 判断是否需要添加“站” -->
+                <view>{{
+                    item.title.endsWith("站") ? item.title : `${item.title} 站`
+                }}</view>
+                <!-- 判断是否需要添加“Station” -->
+                <view
+                    >{{
+                        item.subtitle.endsWith("Railway Station")
+                            ? item.subtitle
+                            : `${item.subtitle} Station`
+                    }}
+                </view>
                 <view class="btnGroup">
                     <button @click="playSound(item.src.approach)">报站</button>
                     <button @click="playSound(item.src.arrived)">到站</button>
