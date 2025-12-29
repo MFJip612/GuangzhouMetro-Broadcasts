@@ -41,7 +41,7 @@ const getStationRes = async () => {
         const isexpress = route.query.isexpress || "local";
 
         const response = await fetch(
-            `https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/intercity/${line}-${destination}-${isexpress}.json`
+            `https://bcd.waterspo.top/intercity/${line}-${destination}-${isexpress}.json`
         );
         if (!response.ok)
             throw new Error(`HTTP error! Status: ${response.status}`);
