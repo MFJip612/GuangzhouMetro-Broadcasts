@@ -9,19 +9,19 @@
             <view class="station-content">
                 <!-- 判断是否需要添加“站” -->
                 <view>{{
-                    line < 70
-                        ? item.title.endsWith("站")
+                    route.query.line < 70
+                        ? (item.title.endsWith("站")
                             ? item.title
-                            : `${item.title} 站`
+                            : `${item.title} 站`)
                         : `${item.title} 站`
                 }}</view>
                 <!-- 判断是否需要添加“Station” -->
                 <view
                     >{{
-                        line < 70
-                            ? item.subtitle.endsWith("Railway Station")
+                        route.query.line < 70
+                            ? (item.subtitle.endsWith("Railway Station")
                                 ? item.subtitle
-                                : `${item.subtitle} Station`
+                                : `${item.subtitle} Station`)
                             : `${item.subtitle} Railway Station`
                     }}
                 </view>
