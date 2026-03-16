@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<navigator url="/pages/station-list-intercity?line=22&towards=fc&key1=Fangcun&key2=PanyuSquareStart" delta="1">
+		<navigator url="/pages/station-list-suburban?line=22&towards=fc&key1=Fangcun&key2=PanyuSquareStart" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>番禺广场——芳村</text>
@@ -10,7 +10,7 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/station-list-intercity?line=22&towards=pys&key1=PanyuSquare&key2=FangcunStart" delta="1">
+		<navigator url="/pages/station-list-suburban?line=22&towards=pys&key1=PanyuSquare&key2=FangcunStart" delta="1">
 			<view class="line">
 				<view class="cn">
 					<text>芳村——番禺广场</text>

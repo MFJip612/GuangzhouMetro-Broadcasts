@@ -131,6 +131,14 @@
 				"navigationBarBackgroundColor": "#2a5aa6",
 				"backgroundColor": "#2a5aa6"
 			}
+		},{
+			"path": "pages/station-list-suburban",
+			"style": {
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "广州地铁报站器(市域)\nIntercity",
+				"navigationBarBackgroundColor": "#2a5aa6",
+				"backgroundColor": "#2a5aa6"
+			}
 		},
 		{
 			"path": "pages/line12/line12",
