@@ -1,7 +1,14 @@
 <template>
 	<view>
-		<navigator url="/pages/station-list?line=3b4&towards=apn2pys&key1=AirportNToPanyuSquare&key2=AirportNStart"
-			delta="1">
+		<navigator
+			url="/pages/station-list"
+			delta="1"
+			@click="prepareStationListParams({
+				line: '3b4',
+				towards: 'apn2pys',
+				key1: 'AirportNToPanyuSquare',
+				key2: 'AirportNStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>机场北——番禺广场</text>
@@ -11,7 +18,15 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/station-list?line=3b4&towards=apn2hb&key1=AirportNToHaibang&key2=HaibangStart" delta="1">
+		<navigator
+			url="/pages/station-list"
+			delta="1"
+			@click="prepareStationListParams({
+				line: '3b4',
+				towards: 'apn2hb',
+				key1: 'AirportNToHaibang',
+				key2: 'HaibangStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>机场北——海傍</text>
@@ -23,6 +38,15 @@
 		</navigator>
 	</view>
 </template>
+
+<script setup>
+import { setPagePostParams } from '@/utils/page-post-params';
+
+const prepareStationListParams = (params) => {
+	// 跳转前暂存参数，目标页按 POST 方式读取。
+	setPagePostParams('/pages/station-list', params);
+};
+</script>
 
 <style lang="scss" scoped>
 navigator {

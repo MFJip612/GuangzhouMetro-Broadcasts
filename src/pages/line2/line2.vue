@@ -10,7 +10,15 @@
 				</view>
 			</view>
 		</navigator> -->
-		<navigator url="/pages/station-list?line=2&towards=gzsrs&key1=GuangzhouSouthRailwayStation&key2=JiahewanggangStart" delta="1">
+		<navigator
+			url="/pages/station-list"
+			delta="1"
+			@click="prepareStationListParams({
+				line: '2',
+				towards: 'gzsrs',
+				key1: 'GuangzhouSouthRailwayStation',
+				key2: 'JiahewanggangStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>嘉禾望岗——广州南站</text>
@@ -24,11 +32,19 @@
 </template>
 
 <script>
+	import { setPagePostParams } from '@/utils/page-post-params';
+
 	export default {
 		data() {
 			return {
 
 			};
+		},
+		methods: {
+			prepareStationListParams(params) {
+				// 跳转前暂存参数，目标页按 POST 方式读取。
+				setPagePostParams('/pages/station-list', params);
+			}
 		}
 	}
 </script>

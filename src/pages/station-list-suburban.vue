@@ -8,23 +8,9 @@
             mode="card">
             <view class="station-content">
                 <!-- 判断是否需要添加“站” -->
-                <view>{{
-                    route.query.line < 70
-                        ? (item.title.endsWith("站")
-                            ? item.title
-                            : `${item.title} 站`)
-                        : `${item.title} 站`
-                }}</view>
+                <view>{{ formatZhTitle(item.title) }}</view>
                 <!-- 判断是否需要添加“Station” -->
-                <view
-                    >{{
-                        route.query.line < 70
-                            ? (item.subtitle.endsWith("Railway Station")
-                                ? item.subtitle
-                                : `${item.subtitle} Station`)
-                            : `${item.subtitle} Railway Station`
-                    }}
-                </view>
+                <view>{{ formatEnSubtitle(item.subtitle) }}</view>
                 <view class="btnGroup">
                     <button @click="playSound(item.src.approach)">报站</button>
                     <button @click="playSound(item.src.arrived)">到站</button>
@@ -38,38 +24,47 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
-import { useRoute } from "vue-router";
+import { computed, ref, onMounted, onUnmounted } from "vue";
+import { consumePagePostParams } from "@/utils/page-post-params";
+import { fetchStationResource } from "@/utils/station-resource";
 
-setInterval(() => {
-    debugger;
-}, 1000);
+const PAGE_PATH = "/pages/station-list-suburban";
+const DEFAULT_PARAMS = Object.freeze({
+    line: "72",
+    key1: "ZhaoqingToXiaojinkou",
+    key2: "ZhaoqingStart",
+    towards: "2xjk",
+    isexpress: "local",
+});
 
-const route = useRoute();
+// 页面参数通过入口页写入的“POST”缓存读取，缺失时回退默认值。
+const pageParams = ref(consumePagePostParams(PAGE_PATH, DEFAULT_PARAMS));
 const innerAudioContext = ref(null);
 const stationRes = ref([]);
+
+// 70 以下按地铁文案规则显示，其余按城际文案规则显示。
+const useMetroStyleText = computed(() => Number(pageParams.value.line) < 70);
+
+const formatZhTitle = (title) =>
+    useMetroStyleText.value && title.endsWith("站") ? title : `${title} 站`;
+
+const formatEnSubtitle = (subtitle) => {
+    if (useMetroStyleText.value) {
+        return subtitle.endsWith("Railway Station")
+            ? subtitle
+            : `${subtitle} Station`;
+    }
+
+    return `${subtitle} Railway Station`;
+};
 
 // 获取站点资源
 const getStationRes = async () => {
     try {
-        // 从 URL 参数中获取 line、key1 和 key2 的值
-        const line = route.query.line || "72";
-        const key1 = route.query.key1 || "ZhaoqingToXiaojinkou";
-        const key2 = route.query.key2 || "ZhaoqingStart";
-        const destination = route.query.towards || "2xjk";
-        const isexpress = route.query.isexpress || "local";
-
-        // 修正 fetch 地址，与 station-list 统一域名
-        const response = await fetch(
-            `https://bcd.waterspo.top/intercity/${line}-${destination}-${isexpress}.json`
-        );
-        if (!response.ok)
-            throw new Error(`HTTP error! Status: ${response.status}`);
-
-        const data = await response.json();
-        const keywords = [key1, key2];
-        stationRes.value = data.stationRes.filter((station) =>
-            keywords.some((keyword) => station.destination.includes(keyword))
+        const { line, key1, key2, towards, isexpress } = pageParams.value;
+        stationRes.value = await fetchStationResource(
+            `https://bcd.waterspo.top/intercity/${line}-${towards}-${isexpress}.json`,
+            [key1, key2]
         );
     } catch (error) {
         console.error("Error fetching station resources:", error);
@@ -104,7 +99,6 @@ onUnmounted(() => {
         innerAudioContext.value.pause();
         innerAudioContext.value.destroy();
     }
-    innerAudioContext.value.destroy();
 });
 </script>
 

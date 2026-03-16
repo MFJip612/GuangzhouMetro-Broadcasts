@@ -1,6 +1,14 @@
 <template>
 	<view>
-		<navigator url="/pages/station-list?line=10&towards=yje&key1=YangjiEast&key2=XilangStart" delta="1">
+		<navigator
+			url="/pages/station-list"
+			delta="1"
+			@click="prepareStationListParams({
+				line: '10',
+				towards: 'yje',
+				key1: 'YangjiEast',
+				key2: 'XilangStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>西塱——杨箕东</text>
@@ -10,7 +18,15 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/station-list?line=10&towards=xl&key1=Xilang&key2=YangjiEastStart" delta="1">
+		<navigator
+			url="/pages/station-list"
+			delta="1"
+			@click="prepareStationListParams({
+				line: '10',
+				towards: 'xl',
+				key1: 'Xilang',
+				key2: 'YangjiEastStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>杨箕东——西塱</text>
@@ -24,7 +40,12 @@
 	<!-- <Sign to_cn="南沙客运港" to_en="Nansha Passenger Port" via_cn="大学城南" via_en="Higher Education Mega Centre S."/> -->
 </template>
 <script setup>
-	import Sign from "@/components/Sign.vue"
+import { setPagePostParams } from '@/utils/page-post-params';
+
+const prepareStationListParams = (params) => {
+	// 跳转前暂存参数，目标页按 POST 方式读取。
+	setPagePostParams('/pages/station-list', params);
+};
 </script>
 <style lang="scss" scoped>
 	navigator {

@@ -1,6 +1,14 @@
 <template>
 	<view>
-		<navigator url="/pages/station-list?line=12&towards=ggy&key1=GuangzhouGymnasium&key2=XunfenggangStart" delta="1">
+		<navigator
+			url="/pages/station-list"
+			delta="1"
+			@click="prepareStationListParams({
+				line: '12',
+				towards: 'ggy',
+				key1: 'GuangzhouGymnasium',
+				key2: 'XunfenggangStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>浔峰岗——广州体育馆</text>
@@ -10,7 +18,15 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/station-list?line=12&towards=hemcs&key1=HEMCS&key2=ErshaIslandStart" delta="1">
+		<navigator
+			url="/pages/station-list"
+			delta="1"
+			@click="prepareStationListParams({
+				line: '12',
+				towards: 'hemcs',
+				key1: 'HEMCS',
+				key2: 'ErshaIslandStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>二沙岛——大学城南</text>
@@ -22,6 +38,15 @@
 		</navigator>
 	</view>
 </template>
+
+<script setup>
+import { setPagePostParams } from '@/utils/page-post-params';
+
+const prepareStationListParams = (params) => {
+	// 跳转前暂存参数，目标页按 POST 方式读取。
+	setPagePostParams('/pages/station-list', params);
+};
+</script>
 
 <style lang="scss" scoped>
 navigator {

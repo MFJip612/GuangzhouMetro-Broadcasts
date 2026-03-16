@@ -1,6 +1,14 @@
 <template>
 	<view>
-		<navigator url="/pages/station-list-suburban?line=22&towards=fc&key1=Fangcun&key2=PanyuSquareStart" delta="1">
+		<navigator
+			url="/pages/station-list-suburban"
+			delta="1"
+			@click="prepareSuburbanParams({
+				line: '22',
+				towards: 'fc',
+				key1: 'Fangcun',
+				key2: 'PanyuSquareStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>番禺广场——芳村</text>
@@ -10,7 +18,15 @@
 				</view>
 			</view>
 		</navigator>
-		<navigator url="/pages/station-list-suburban?line=22&towards=pys&key1=PanyuSquare&key2=FangcunStart" delta="1">
+		<navigator
+			url="/pages/station-list-suburban"
+			delta="1"
+			@click="prepareSuburbanParams({
+				line: '22',
+				towards: 'pys',
+				key1: 'PanyuSquare',
+				key2: 'FangcunStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>芳村——番禺广场</text>
@@ -22,6 +38,15 @@
 		</navigator>
 	</view>
 </template>
+
+<script setup>
+import { setPagePostParams } from '@/utils/page-post-params';
+
+const prepareSuburbanParams = (params) => {
+	// 跳转前暂存参数，目标页按 POST 方式读取。
+	setPagePostParams('/pages/station-list-suburban', params);
+};
+</script>
 
 <style lang="scss" scoped>
 navigator {

@@ -8,17 +8,9 @@
             mode="card">
             <view class="station-content">
                 <!-- 判断是否需要添加“站” -->
-                <view>{{
-                    item.title.endsWith("站") ? item.title : `${item.title} 站`
-                }}</view>
+                <view>{{ formatZhTitle(item.title) }}</view>
                 <!-- 判断是否需要添加“Station” -->
-                <view
-                    >{{
-                        item.subtitle.endsWith("Railway Station")
-                            ? item.subtitle
-                            : `${item.subtitle} Station`
-                    }}
-                </view>
+                <view>{{ formatEnSubtitle(item.subtitle) }}</view>
                 <view class="btnGroup">
                     <button @click="playSound(item.src)">播放</button>
                     <button class="stop-play" @click="stopPlay()">
@@ -32,35 +24,35 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
-import { useRoute } from "vue-router";
+import { consumePagePostParams } from "@/utils/page-post-params";
+import { fetchStationResource } from "@/utils/station-resource";
 
-setInterval(() => {
-    debugger;
-}, 1000);
+const PAGE_PATH = "/pages/station-list";
+const DEFAULT_PARAMS = Object.freeze({
+    line: "3b4",
+    key1: "AirportNToPanyuSquare",
+    key2: "AirportNStart",
+    towards: "apn2pys",
+});
 
-const route = useRoute();
+// 页面参数通过入口页写入的“POST”缓存读取，缺失时回退默认值。
+const pageParams = ref(consumePagePostParams(PAGE_PATH, DEFAULT_PARAMS));
 const innerAudioContext = ref(null);
 const stationRes = ref([]);
+
+const formatZhTitle = (title) =>
+    title.endsWith("站") ? title : `${title} 站`;
+
+const formatEnSubtitle = (subtitle) =>
+    subtitle.endsWith("Railway Station") ? subtitle : `${subtitle} Station`;
 
 // 获取站点资源
 const getStationRes = async () => {
     try {
-        // 从 URL 参数中获取 line、key1 和 key2 的值
-        const line = route.query.line || "3b4";
-        const key1 = route.query.key1 || "AirportNToPanyuSquare";
-        const key2 = route.query.key2 || "AirportNStart";
-        const destination = route.query.towards || "apn2pys";
-
-        const response = await fetch(
-            `https://bcd.waterspo.top/${line}-${destination}.json`
-        );
-        if (!response.ok)
-            throw new Error(`HTTP error! Status: ${response.status}`);
-
-        const data = await response.json();
-        const keywords = [key1, key2];
-        stationRes.value = data.stationRes.filter((station) =>
-            keywords.some((keyword) => station.destination.includes(keyword))
+        const { line, key1, key2, towards } = pageParams.value;
+        stationRes.value = await fetchStationResource(
+            `https://bcd.waterspo.top/${line}-${towards}.json`,
+            [key1, key2]
         );
     } catch (error) {
         console.error("Error fetching station resources:", error);

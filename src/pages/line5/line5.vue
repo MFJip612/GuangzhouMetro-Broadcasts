@@ -1,6 +1,14 @@
 <template>
 	<view>
-		<navigator url="/pages/station-list?line=5&towards=hpxg&key1=HuangpuNewPort&key2=JiaokouStart" delta="1">
+		<navigator
+			url="/pages/station-list"
+			delta="1"
+			@click="prepareStationListParams({
+				line: '5',
+				towards: 'hpxg',
+				key1: 'HuangpuNewPort',
+				key2: 'JiaokouStart'
+			})">
 			<view class="line">
 				<view class="cn">
 					<text>滘口——黄埔新港</text>
@@ -10,18 +18,17 @@
 				</view>
 			</view>
 		</navigator>
-		<!-- <navigator url="/pages/station-list?line=5&towards=jk&key1=Jiaokou&key2=HuangpuNewPortStart" delta="1">
-			<view class="line">
-				<view class="cn">
-					<text>黄埔新港——滘口</text>
-				</view>
-				<view class="en">
-					<text>Huangpu New Port towards Jiaokou</text>
-				</view>
-			</view>
-		</navigator> -->
 	</view>
 </template>
+
+<script setup>
+import { setPagePostParams } from '@/utils/page-post-params';
+
+const prepareStationListParams = (params) => {
+	// 跳转前暂存参数，目标页按 POST 方式读取。
+	setPagePostParams('/pages/station-list', params);
+};
+</script>
 
 <style lang="scss" scoped>
 navigator {

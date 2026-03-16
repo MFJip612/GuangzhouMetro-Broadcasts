@@ -218,9 +218,6 @@
 				提供文件服务</text> -->
 			<text class="title">由 <uni-link href="https://space.bilibili.com/9033373/" text="@红茶w">@红茶w</uni-link>
 				提供报站资源</text>
-			<text class="title">
-				<navigator url="/pages/file-list">广播文件</navigator>
-			</text>
 			<text class="title"><uni-link href="https://forms.office.com/r/15t2jNb82h">
 					<image src="/static/images/QRCode.png" mode="aspectFit"></image>
 				</uni-link></text>
