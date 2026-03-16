@@ -26,7 +26,11 @@ export const fetchStationResource = async (url, keywords) => {
         }
 
         return keywords.some((keyword) =>
-            destinations.includes(keyword)
+            destinations.some(
+                (destination) =>
+                    typeof destination === "string" &&
+                    destination.includes(keyword)
+            )
         );
     });
 };
