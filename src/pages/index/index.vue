@@ -1,6 +1,7 @@
 <template>
 	<view class="content">
-		<uni-notice-bar show-icon scrollable single text="欢迎投稿更多线路! 本网站目前有1, 2, 3, 5, 10, 12号线的线路报站,敬请期待其他线路! "></uni-notice-bar>
+		<uni-notice-bar show-icon scrollable single
+			text="欢迎投稿更多线路! 本网站目前有1, 2, 3, 5, 10, 12号线的线路报站,敬请期待其他线路! "></uni-notice-bar>
 		<image src="/static/images/Guangzhou_Metro_logo.svg" style="width: 100%;height: 80rpx;" mode="aspectFit">
 		</image>
 		<view class="choose">
@@ -195,7 +196,8 @@
 						<text class="en">Guangzhou-Huizhou Intercity</text>
 					</view>
 				</view>
-			</navigator><navigator>
+			</navigator>
+			<navigator>
 				<view class="line line-intercity disable">
 					<view class="col">
 						<text class="cn">琶莲城际</text>
@@ -226,235 +228,237 @@
 </template>
 
 <script>
-	// import '/static/js/protect.js'
-	export default {
-		data() {
-			return {
-
-			}
-		},
-		onLoad() {},
-		methods: {
+// import '/static/js/protect.js'
+export default {
+	data() {
+		return {
 
 		}
+	},
+	onLoad() { },
+	methods: {
+
 	}
+}
 </script>
 
 <style lang="scss" scoped>
-	navigator {
-		width: initial;
+navigator {
+	width: initial;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-size: 36rpx;
+	color: #8f8f94;
+}
+
+.choose {
+	width: 25rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	// margin: 50rpx;
+
+	/* 网页端适配 - 在大屏幕上使用更大的容器宽度 */
+	@media screen and (min-width: 768px) {
+		width: 100%;
+		max-width: 1200px;
 	}
 
-	.content {
+	/* 网页端适配 - 在超大屏幕上增加间距 */
+	@media screen and (min-width: 1200px) {
+		padding: 0 20px;
+	}
+}
+
+.line {
+	margin: 10rpx;
+	padding-left: 5rpx;
+	padding-right: 10rpx;
+	position: relative;
+	width: 280rpx;
+	border-radius: 20rpx;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+
+	.num {
+		position: relative;
+		text-align: center;
+		font-size: 4rem;
+		font-family: 'Arial';
+	}
+
+	.col {
+		position: relative;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
-
-	.choose {
-		width: 25rem;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		// margin: 50rpx;
-		
-		/* 网页端适配 - 在大屏幕上使用更大的容器宽度 */
-		@media screen and (min-width: 768px) {
-			width: 100%;
-			max-width: 1200px;
-		}
-		
-		/* 网页端适配 - 在超大屏幕上增加间距 */
-		@media screen and (min-width: 1200px) {
-			padding: 0 20px;
-		}
-	}
-
-	.line {
-		margin: 10rpx;
-		position: relative;
-		width: 280rpx;
-		border-radius: 20rpx;
-		display: flex;
 		text-align: center;
-		justify-content: center;
-		align-items: center;
-		color: #FFF;
 
-		.num {
-			position: relative;
-			text-align: center;
-			font-size: 4rem;
+		.cn {
+			font-size: 2rem;
+			font-family: '黑体';
+		}
+
+		.en {
+			font-size: 1.2rem;
 			font-family: 'Arial';
 		}
+	}
+}
 
-		.col {
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			text-align: center;
+.color-white {
+	color: #FFF;
+}
 
-			.cn {
-				font-size: 2rem;
-				font-family: '黑体';
-			}
+.text-black {
+	color: #000;
+}
 
-			.en {
-				font-size: 1.2rem;
-				font-family: 'Arial';
-			}
+.line-1 {
+	background-color: #F3D03E;
+}
+
+.line-2 {
+	color: #FFF;
+	background-color: #00629B;
+}
+
+.line-3 {
+	color: #FFF;
+	background-color: #ECA154;
+}
+
+.line-4 {
+	color: #FFF;
+	background-color: #00843D;
+}
+
+.line-5 {
+	color: #FFF;
+	background-color: #C5003E;
+}
+
+.line-6 {
+	color: #FFF;
+	background-color: #80225F;
+}
+
+.line-7 {
+	color: #FFF;
+	background-color: #97D700;
+}
+
+.line-8 {
+	color: #FFF;
+	background-color: #008C95;
+}
+
+.line-9 {
+	// color: #FFF;
+	background-color: #71CC98;
+}
+
+.line-10 {
+	background-color: #7D9CC0;
+}
+
+.line-11 {
+	background-color: #ffb00a;
+}
+
+.line-12 {
+	background-color: #59621D;
+}
+
+.line-13 {
+	color: #FFF;
+	background-color: #8E8C13;
+}
+
+.line-14 {
+	color: #FFF;
+	background-color: #81312F;
+}
+
+.line-18 {
+	color: #FFF;
+	background-color: #0047BA;
+}
+
+.line-21 {
+	color: #FFF;
+	background-color: #211747;
+}
+
+.line-22 {
+	color: #FFF;
+	background-color: #CD5228;
+}
+
+.line-gf {
+	height: 4.5834rem;
+	color: #FFF;
+	background-color: #C4D600;
+
+	.col {
+		.cn {
+			font-size: 2.3rem;
+		}
+
+		.en {
+			font-size: 1.25rem;
 		}
 	}
+}
 
-	.color-white {
-		color: #FFF;
+.line-apm {
+	height: 4.5834rem;
+	color: #FFF;
+	background-color: #00B5E2;
+
+	.num {
+		font-size: 2.85rem;
 	}
+}
 
-	.text-black {
-		color: #000;
-	}
+.line-intercity {
+	min-width: 20rem;
+	height: 4.5834rem;
+	color: #FFF;
+	background-color: #2a5aa6;
+	border-radius: 10rpx;
 
-	.line-1 {
-		background-color: #F3D03E;
-	}
+	.col {
+		.cn {
+			font-size: 2.1rem;
+		}
 
-	.line-2 {
-		color: #FFF;
-		background-color: #00629B;
-	}
-
-	.line-3 {
-		color: #FFF;
-		background-color: #ECA154;
-	}
-
-	.line-4 {
-		color: #FFF;
-		background-color: #00843D;
-	}
-
-	.line-5 {
-		color: #FFF;
-		background-color: #C5003E;
-	}
-
-	.line-6 {
-		color: #FFF;
-		background-color: #80225F;
-	}
-
-	.line-7 {
-		color: #FFF;
-		background-color: #97D700;
-	}
-
-	.line-8 {
-		color: #FFF;
-		background-color: #008C95;
-	}
-
-	.line-9 {
-		// color: #FFF;
-		background-color: #71CC98;
-	}
-
-	.line-10 {
-		background-color: #7D9CC0;
-	}
-
-	.line-11 {
-		background-color: #ffb00a;
-	}
-
-	.line-12 {
-		background-color: #59621D;
-	}
-
-	.line-13 {
-		color: #FFF;
-		background-color: #8E8C13;
-	}
-
-	.line-14 {
-		color: #FFF;
-		background-color: #81312F;
-	}
-
-	.line-18 {
-		color: #FFF;
-		background-color: #0047BA;
-	}
-
-	.line-21 {
-		color: #FFF;
-		background-color: #211747;
-	}
-
-	.line-22 {
-		color: #FFF;
-		background-color: #CD5228;
-	}
-
-	.line-gf {
-		height: 4.5834rem;
-		color: #FFF;
-		background-color: #C4D600;
-
-		.col {
-			.cn {
-				font-size: 2.3rem;
-			}
-
-			.en {
-				font-size: 1.25rem;
-			}
+		.en {
+			font-size: 1.1rem;
 		}
 	}
+}
 
-	.line-apm {
-		height: 4.5834rem;
-		color: #FFF;
-		background-color: #00B5E2;
+.disable {
+	color: #FFF;
+	background-color: gray;
+}
 
-		.num {
-			font-size: 2.85rem;
-		}
+/* 网页端适配 - 底部信息区域 */
+@media screen and (min-width: 768px) {
+	.text-area {
+		margin-top: 20px;
 	}
-
-	.line-intercity {
-		min-width: 20rem;
-		height: 4.5834rem;
-		color: #FFF;
-		background-color: #2a5aa6;
-		border-radius: 10rpx;
-
-		.col {
-			.cn {
-				font-size: 2.1rem;
-			}
-
-			.en {
-				font-size: 1.1rem;
-			}
-		}
-	}
-
-	.disable {
-		color: #FFF;
-		background-color: gray;
-	}
-	
-	/* 网页端适配 - 底部信息区域 */
-	@media screen and (min-width: 768px) {
-		.text-area {
-			margin-top: 20px;
-		}
-	}
+}
 </style>
