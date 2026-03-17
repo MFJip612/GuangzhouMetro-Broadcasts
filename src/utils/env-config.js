@@ -28,12 +28,3 @@ export const INDEX_AUTHOR_LINK =
 export const INDEX_FORM_LINK = import.meta.env.VITE_INDEX_FORM_LINK || "#";
 
 export const INDEX_BLOG_LINK = import.meta.env.VITE_INDEX_BLOG_LINK || "#";
-
-export const ONEDRIVE_CONFIG = Object.freeze({
-    clientId: import.meta.env.VITE_ONEDRIVE_CLIENT_ID || "",
-    redirectUri: import.meta.env.VITE_ONEDRIVE_REDIRECT_URI || "",
-    scope: import.meta.env.VITE_ONEDRIVE_SCOPE || "Files.Read.All",
-    folderPath: import.meta.env.VITE_ONEDRIVE_FOLDER_PATH || "broadcast",
-    authBaseUrl: trimTrailingSlash(import.meta.env.VITE_ONEDRIVE_AUTH_BASE_URL || ""),
-    graphBaseUrl: trimTrailingSlash(import.meta.env.VITE_ONEDRIVE_GRAPH_BASE_URL || ""),
-});
