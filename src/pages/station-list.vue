@@ -26,6 +26,7 @@
 import { ref, onMounted, onUnmounted } from "vue";
 import { consumePagePostParams } from "@/utils/page-post-params";
 import { fetchStationResource } from "@/utils/station-resource";
+import { RESOURCE_BASE_URL, joinUrl } from "@/utils/env-config";
 
 const PAGE_PATH = "/pages/station-list";
 const DEFAULT_PARAMS = Object.freeze({
@@ -51,7 +52,7 @@ const getStationRes = async () => {
     try {
         const { line, key1, key2, towards } = pageParams.value;
         stationRes.value = await fetchStationResource(
-            `https://bcd.waterspo.top/${line}-${towards}.json`,
+            joinUrl(RESOURCE_BASE_URL, `${line}-${towards}.json`),
             [key1, key2]
         );
     } catch (error) {

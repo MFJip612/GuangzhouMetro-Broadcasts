@@ -216,11 +216,11 @@
 		</view>
 		<view class="text-area"
 			style="justify-content: center;display: flex;flex-direction: column;align-items: center;">
-			<!-- <text class="title">由 <uni-link href="https://blog.zhengxian.top/" text="@380AM-0204">@380AM-0204</uni-link>
+			<!-- <text class="title">由 <uni-link :href="indexBlogLink" text="@380AM-0204">@380AM-0204</uni-link>
 				提供文件服务</text> -->
-			<text class="title">由 <uni-link href="https://space.bilibili.com/9033373/" text="@红茶w">@红茶w</uni-link>
+			<text class="title">由 <uni-link :href="indexAuthorLink" text="@红茶w">@红茶w</uni-link>
 				提供报站资源</text>
-			<text class="title"><uni-link href="https://forms.office.com/r/15t2jNb82h">
+			<text class="title"><uni-link :href="indexFormLink">
 					<image src="/static/images/QRCode.png" mode="aspectFit"></image>
 				</uni-link></text>
 		</view>
@@ -229,10 +229,18 @@
 
 <script>
 // import '/static/js/protect.js'
+import {
+	INDEX_AUTHOR_LINK,
+	INDEX_FORM_LINK,
+	INDEX_BLOG_LINK,
+} from "@/utils/env-config";
+
 export default {
 	data() {
 		return {
-
+			indexAuthorLink: INDEX_AUTHOR_LINK,
+			indexFormLink: INDEX_FORM_LINK,
+			indexBlogLink: INDEX_BLOG_LINK,
 		}
 	},
 	onLoad() { },

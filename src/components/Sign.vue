@@ -30,8 +30,8 @@
 	defineProps({
 		to_cn: String,
 		to_en: String,
-		via_cn: String,
-		via_en: String
+		via_cn?: String,
+		via_en?: String
 	})
 </script>
 

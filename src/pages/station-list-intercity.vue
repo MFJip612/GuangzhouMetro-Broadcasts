@@ -27,6 +27,7 @@
 import { computed, ref, onMounted, onUnmounted } from "vue";
 import { consumePagePostParams } from "@/utils/page-post-params";
 import { fetchStationResource } from "@/utils/station-resource";
+import { RESOURCE_INTERCITY_BASE_URL, joinUrl } from "@/utils/env-config";
 
 const PAGE_PATH = "/pages/station-list-intercity";
 const DEFAULT_PARAMS = Object.freeze({
@@ -63,7 +64,10 @@ const getStationRes = async () => {
     try {
         const { line, key1, key2, towards, isexpress } = pageParams.value;
         stationRes.value = await fetchStationResource(
-            `https://bcd.waterspo.top/intercity/${line}-${towards}-${isexpress}.json`,
+            joinUrl(
+                RESOURCE_INTERCITY_BASE_URL,
+                `${line}-${towards}-${isexpress}.json`
+            ),
             [key1, key2]
         );
     } catch (error) {

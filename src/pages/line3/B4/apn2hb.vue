@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import { APN2HB_RESOURCE_URL } from "@/utils/env-config";
+
 export default {
 	data() {
 		return {
@@ -34,8 +36,7 @@ export default {
 	methods: {
 		async getStationRes() {
 			try {
-				const response = await fetch(
-					"https://broadcast-1304995454.cos.ap-guangzhou.myqcloud.com/res2.json");
+				const response = await fetch(APN2HB_RESOURCE_URL);
 				if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
 				const data = await response.json();

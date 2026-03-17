@@ -5,6 +5,9 @@
 npm install
 ```
 
+### Environment variables
+Create `.env` based on `.env.example` and fill in your own values.
+
 ### Compiles and hot-reloads for development
 ```
 npm run dev:h5
