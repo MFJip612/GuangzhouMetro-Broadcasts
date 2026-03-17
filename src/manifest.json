@@ -65,9 +65,6 @@
     "mp-baidu" : {
         "usingComponents" : true
     },
-    "mp-toutiao" : {
-        "usingComponents" : true
-    },
     "uniStatistics" : {
         "enable" : false
     },
